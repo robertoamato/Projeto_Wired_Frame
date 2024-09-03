@@ -3,18 +3,24 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  font-family: Arial, sans-serif;
+  
   
 }
 
 h1 {
-  font-size: 34px;
-  font-weight: bold;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 60px;
   margin-bottom: 10px;
+  font-family: 'poppins';
+  text-align: center;
 }
 
 p {
-  font-size: 16px;
+  font-family: 'open sans';
+  font-size: 24px;
+  line-height: 38,4px;
+  
   color: #666;
   margin-bottom: 20px;
 }
@@ -45,7 +51,12 @@ p {
 }
 
 .divider {
+  font-family: 'open sans';
+  font-size: 25px;
   height: 40px;
+  top:2006px;
+  left: 187px;
+  border-radius: 10px;
   width: 1px;
   background-color: #ccc;
   margin: 0 20px;
