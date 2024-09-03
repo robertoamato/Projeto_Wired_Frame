@@ -15,8 +15,8 @@
   width: 50px; /* Ajuste conforme necessário */
   height: 50px; /* Ajuste conforme necessário */
   border-radius: 50%; /* Para um efeito de círculo */
-  
   display: flex;
+  margin-left: 100px;
 }
 
 .navbar-links {
@@ -24,8 +24,9 @@
   display: flex;
   margin: 0;
   padding: 0;
-  margin-right: -1100px;
+  margin-right: -900px;
   font-size: 22px;
+  font-family:sans-serif,Arial, Helvetica, sans-serif;
 }
 
 .navbar-links li {
