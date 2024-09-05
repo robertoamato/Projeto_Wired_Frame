@@ -12,6 +12,7 @@ import { LatestBlogComponent } from './latest-blog/latest-blog.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { FaqComponent } from './faq/faq.component';
 import { FooterSectionComponent } from './footer-section/footer-section.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,9 @@ import { FooterSectionComponent } from './footer-section/footer-section.componen
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

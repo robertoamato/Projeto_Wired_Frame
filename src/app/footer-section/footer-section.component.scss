@@ -17,22 +17,35 @@
   margin-right: 155px;
 }
 
-.info-text h2 {
+.info-text h2 {  // texto need more information?
   margin: 0;
-  font-size: 24px;
+  font-size: 34px;
+  font-family: 'poppins';
+  font-weight: 500;
+  line-height: 48px;
 }
 
-.info-text p {
+.info-text p {   // texto write your concern to us and our specialist will get back to you
   margin: 5px 0 0;
+  font-family: 'open sans';
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27.24px;
+  text-align: center;
+
 }
 
 .contact-button {
   background-color: #fff;
   color: #333;
-  padding: 10px 40px;
+  padding: 18px,8px,18px,8px; // botao need more information
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  height: 60px;
+  width: 150px;
+  font-size: 20px;
+  line-height: 24.2px;
   
 }
 
@@ -43,26 +56,41 @@
 }
 
 .footer-column {
-  width: 18%;
+  width: 60%;
   color: #555;
+  
+   
 }
 
 .footer-column h3 {
-  font-size: 18px;
+  font-size: 20px;
+  font-family: 'poppins';
   margin-bottom: 10px;
+  line-height: 30px;
+  font-weight: 600;
+  margin-left: -445px;
+  
 }
-
 .footer-column a {
-  display: block;
+  display: flex;
   color: #555;
   text-decoration: none;
   margin-bottom: 5px;
+  margin-left: -445px;
   font-size: 14px;
+  font-family: 'open sans';
+  
+}
+.footer-column p{
+ 
+ margin-left: 110px;
+
 }
 
 .connect .social-icons {
   display: flex;
   gap: 10px;
+  margin-left: -445px;
 }
 
 .social-icons .icon {
@@ -75,5 +103,10 @@
 .footer-logo {
   width: 50px;
   height: 50px;
-  margin-bottom: 10px;
+  margin-bottom: 10px;   //logotipo
+  margin-right: 3100px;
+  margin-left: 110px;
+  
+  
 }
+
