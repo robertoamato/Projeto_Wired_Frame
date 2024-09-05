@@ -7,8 +7,11 @@
 h2 {
   font-family: 'poppins';
   font-size: 3em;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 20px;
+  line-height: 60px;
+  text-align: center;
+  padding-top: 120px;
 }
 
 .testimonials-container {
@@ -24,17 +27,21 @@ h2 {
   background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 340px;
+  width: 415px;
   padding: 30px;
   text-align: left;
   
 }
 
 .testimonial-card p {
-  font-size: 14px;
+  font-family: 'open sans';
+  font-weight: 400;
+  line-height: 25.6px;
+  font-size: 12px;
   color: #666;
   margin-bottom: 10px;
-  width: 300px;
+  width: 380px;
+  gap: 15px;
 }
 
 .client-info {

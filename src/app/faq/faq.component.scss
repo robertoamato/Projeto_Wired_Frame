@@ -4,6 +4,7 @@
   align-items: flex-start;
   margin-right: 450px;
   margin-left: 500px;
+  padding-top: 120px;
 }
 
 .faq-image img {
@@ -23,6 +24,8 @@
   font-family: 'poppins';
   font-size: 24px;
   margin-bottom: 20px;
+  font-weight: 600;
+  line-height: 45px;
 }
 
 .faq-item {
@@ -35,12 +38,19 @@
 
 .faq-question {
   display: flex;
+  font-family: 'poppins';
+  font-size: 16px;
+  line-height: 24px;
   justify-content: space-between;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .faq-answer {
+  font-family: 'open sans';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
   margin-top: 10px;
   color: #666;
 }

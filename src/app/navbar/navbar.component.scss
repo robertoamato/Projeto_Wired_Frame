@@ -30,14 +30,18 @@
 }
 
 .navbar-links li {
+  font-family: 'open sans';
+  font-size: 16px;
+  font-weight: 600;
   margin-right: 20px;
+  
   
 }
 
 .navbar-links a {
   text-decoration: none;
   color: #000;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .navbar-button {
@@ -46,12 +50,14 @@
   border: none;
   padding: -10px 20px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 16px;
   transition: background-color 0.3s ease;
   width: 120px;
   height: 40px;
-  margin-right: 100px;
+  margin-right: 240px;
   max-width: 100%;
+  font-weight: 600;
+  font-family: 'inter';
 }
 
 .navbar-button:hover {

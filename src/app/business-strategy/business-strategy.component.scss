@@ -3,6 +3,7 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  padding-top: 100px;
   
   
 }
@@ -10,17 +11,17 @@
 h1 {
   font-size: 40px;
   font-weight: 600;
-  line-height: 60px;
-  margin-bottom: 10px;
+  line-height: 50px;
+  margin-bottom: 50px;
   font-family: 'poppins';
-  text-align: center;
+  
 }
 
 p {
   font-family: 'open sans';
   font-size: 24px;
   line-height: 38,4px;
-  
+  font-weight: 600;
   color: #666;
   margin-bottom: 20px;
 }
@@ -30,12 +31,13 @@ p {
   justify-content: space-around;
   align-items: center;
   padding: 10px;
-  border-radius: 8px;
+  border-radius: 18px;
   margin-bottom: 30px;
 }
 
 .stat-item {
   text-align: center;
+  padding-top: 30px;
 }
 
 .stat-item h3 {
@@ -63,9 +65,9 @@ p {
 }
 
 .image-placeholder {
-  margin-left: 40px;
-  width: 90%;
-  height: 400px;
+  margin-left: -50px;
+  width: 110%;
+  height: 500px;
   background-color: #ccc;
   border: 1px solid #999;
 }
