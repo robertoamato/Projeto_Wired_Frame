@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   width: 90%;
-  height: 500px; /* Ajuste a altura conforme necessário */
+  height: 600px; /* Ajuste a altura conforme necessário */
   background-color: #f5f5f5; /* Cor de fundo do container */
 }
 
@@ -13,7 +13,8 @@
   background-color: #F4F4F4; /* Cor de fundo para o texto */
   box-shadow: 0 0 0px rgba(0, 0, 0, 0.1); /* Sombra leve para o efeito */
   text-align: center;
-  
+
+
 }
 
 .text-container h1 {
@@ -24,7 +25,7 @@
   margin-bottom: 10px;
   text-align: center;
   line-height: 70px;
-  
+
 
 }
 
@@ -48,8 +49,8 @@
   font-size: 20px;
   font-weight: 600;
   transition: background-color 0.3s ease;
-  
-    
+
+
 }
 
 .design-button:hover {
@@ -59,6 +60,6 @@
 .image-container {
   flex: 1;
   background-color: #ccc; /* Cor de fundo do espaço de imagem */
-  margin-right:150px;
+  margin-right:-130px;
   height: 100%;
 }
