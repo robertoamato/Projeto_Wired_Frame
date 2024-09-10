@@ -9,6 +9,7 @@
 .navbar-logo {
   display: flex;
   align-items: center;
+  margin-right: 250px;
 }
 
 .navbar-logo img {
@@ -16,7 +17,7 @@
   height: 50px; /* Ajuste conforme necessário */
   border-radius: 50%; /* Para um efeito de círculo */
   display: flex;
-  margin-left: 100px;
+  margin-left: 50px;
 }
 
 .navbar-links {
@@ -24,7 +25,7 @@
   display: flex;
   margin: 0;
   padding: 0;
-  margin-right: -900px;
+  margin-left: 550px;
   font-size: 1.5em;
   font-family:sans-serif,Arial, Helvetica, sans-serif;
 }
@@ -34,8 +35,8 @@
   font-size: 1em;
   font-weight: 600;
   margin-right: 20px;
-  
-  
+
+
 }
 
 .navbar-links a {
@@ -54,10 +55,11 @@
   transition: background-color 0.3s ease;
   width: 120px;
   height: 40px;
-  margin-right: 240px;
+  margin-right: 340px;
   max-width: 100%;
   font-weight: 600;
   font-family: 'inter';
+  display: block;
   
 }
 

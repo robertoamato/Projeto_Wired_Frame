@@ -2,22 +2,23 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-right: 450px;
-  margin-left: 500px;
+  margin-right: 20px;
+
   padding-top: 120px;
 }
 
 .faq-image img {
-  max-width: 100%;
+  max-width: 200%;
   height: 380px;
-  margin-left: 00px;
-  width: 400px;
-  
-  
+  margin-left: 350px;
+  width: 500px;
+
+
 }
 
 .faq-content {
-  width: 50%;
+  width: 30%;
+  margin-right: 400px;
 }
 
 .faq-content h2 {
