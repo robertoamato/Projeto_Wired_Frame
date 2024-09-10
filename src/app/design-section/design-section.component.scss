@@ -5,61 +5,64 @@
   width: 100%;
   height: 500px; /* Ajuste a altura conforme necessário */
   background-color: #f5f5f5; /* Cor de fundo do container */
-  
+  padding: 20px; /* Adiciona um padding geral */
+  box-sizing: border-box; /* Inclui o padding e border na largura total */
 }
 
 .text-container {
   flex: 1;
-  padding: 20px;
-  background-color: #F4F4F4; /* Cor de fundo para o texto */
-  box-shadow: 0 0 0px rgba(0, 0, 0, 0.1); /* Sombra leve para o efeito */
+  background-color: #ffffff; /* Cor de fundo para o texto */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve para o efeito */
+  padding: 125px;
+  border-radius: 8px; /* Adiciona bordas arredondadas */
   text-align: center;
-
-
 }
 
 .text-container h1 {
-  font-family: 'poppins';
-  font-size: 3em;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5em;
   font-weight: 600;
-  color: #000;         // texto primario
-  margin-bottom: 10px;
-  text-align: center;
-  line-height: 70px;
-
-
+  color: #000; /* Texto primário */
+  margin-bottom: 20px;
+  line-height: 1.2; /* Ajusta a altura da linha para melhor legibilidade */
 }
 
 .text-container p {
-  font-family: 'open sans';
-  font-size: 1.5em;    //texto secundario
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.125em; /* Ajusta o tamanho do texto secundário */
   font-weight: 400;
-  line-height: 27px;
-  color: #888;
-  margin-bottom:1 px;
-  text-align: center;
+  line-height: 1.6;
+  color: #555; /* Cor do texto secundário */
+  margin-bottom: 50px; /* Espaçamento abaixo do parágrafo */
 }
 
 .design-button {
   background-color: #000;
   color: #fff;
   border: none;
-  padding: 10px 20px;
+  padding: 12px 24px;
   cursor: pointer;
-  font-family: 'inter';
-  font-size: 1.5em;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.125em;
   font-weight: 600;
+  border-radius: 4px; /* Adiciona bordas arredondadas ao botão */
   transition: background-color 0.3s ease;
-
-
 }
 
 .design-button:hover {
-  background-color: #333333;
+  background-color: #333;
 }
 
 .image-container {
   flex: 1;
-  background-color: #ccc; /* Cor de fundo do espaço de imagem */
-  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.image-container img {
+  max-width: 0%;
+  height: auto;
+  border-radius: 8px; /* Adiciona bordas arredondadas à imagem */
 }

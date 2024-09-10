@@ -1,8 +1,7 @@
 /* contact-section.component.css */
 .contact-section {
-  
   padding: 120px;
-  padding-top: 120px;
+  padding-top: 120px; /* Redundante, você pode remover se usar apenas o padding superior */
 }
 
 .info-banner {
@@ -13,36 +12,31 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  margin-bottom: 20px;
-  margin-left:13cqh;
-  margin-right: 250px;
-
+  margin: 0 auto 20px; /* Centraliza horizontalmente e cria espaçamento abaixo */
+  max-width: 1500px; /* Define uma largura máxima para o banner */
 }
 
-.info-text h2 {  // texto need more information?
+.info-text h2 {
   margin: 0;
   font-size: 34px;
-  font-family: 'poppins';
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   line-height: 48px;
-
 }
 
-.info-text p {   // texto write your concern to us and our specialist will get back to you
+.info-text p {
   margin: 5px 0 0;
-  font-family: 'open sans';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 27.24px;
   text-align: center;
-
 }
 
 .contact-button {
   background-color: #fff;
   color: #333;
-  padding: 18px,8px,18px,8px; // botao need more information
+  padding: 18px 8px; /* Corrigido: remove vírgulas e define o padding corretamente */
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -50,51 +44,50 @@
   width: 150px;
   font-size: 20px;
   line-height: 24.2px;
+  transition: background-color 0.3s ease; /* Adiciona transição para o hover */
+}
 
+.contact-button:hover {
+  background-color: #eee; /* Efeito de hover para melhorar a usabilidade */
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
+  flex-wrap: wrap; /* Permite que as colunas se movam para a linha seguinte em telas menores */
 }
 
 .footer-column {
-  width: 60%;
+  flex: 1; /* Faz com que as colunas ocupem o mesmo espaço */
+  margin: 0 60px; /* Espaçamento entre colunas */
   color: #555;
-
-
 }
 
 .footer-column h3 {
   font-size: 20px;
-  font-family: 'poppins';
+  font-family: 'Poppins', sans-serif;
   margin-bottom: 10px;
   line-height: 30px;
   font-weight: 600;
-  margin-left: -300px;
-
 }
+
 .footer-column a {
-  display: flex;
   color: #555;
   text-decoration: none;
   margin-bottom: 5px;
-  margin-left: -300px;
+  display: block; /* Ajusta links para empilhamento vertical */
   font-size: 14px;
-  font-family: 'open sans';
-
+  font-family: 'Open Sans', sans-serif;
 }
-.footer-column p{
 
- margin-left: 110px;
-
+.footer-column p {
+  margin: 10; /* Remove margens desnecessárias */
 }
 
 .connect .social-icons {
   display: flex;
   gap: 10px;
-  margin-left: -300px;
 }
 
 .social-icons .icon {
@@ -107,10 +100,7 @@
 .footer-logo {
   width: 50px;
   height: 50px;
-  margin-bottom: 10px;   //logotipo
-  margin-right: 3100px;
-  margin-left: 110px;
-
-
+  margin-bottom: 10px;
+  /* Corrige margens exageradas */
+  margin: 10; /* Remove margens desnecessárias */
 }
-

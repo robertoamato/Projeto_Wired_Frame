@@ -1,16 +1,16 @@
 .partners-section {
   text-align: center;
-  padding: 20px;
-  font-family: Arial, sans-serif;
+  padding: 40px 20px; /* Adicionando padding em cima e embaixo */
+  font-family: 'Arial', sans-serif;
 }
 
 h2 {
-  font-family: 'poppins';
+  font-family: 'Poppins', sans-serif;
   font-size: 34px;
   font-weight: 600;
   margin-bottom: 20px;
-  line-height: 60px;
-  padding-top: 120px;
+  line-height: 40px; /* Ajustado para um melhor espaçamento */
+  padding-top: 40px; /* Reduzido para um alinhamento mais apropriado */
 }
 
 .partners-logos {
@@ -18,22 +18,44 @@ h2 {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  padding-top: 20px;
+  flex-wrap: wrap; /* Permite que os logos se movam para a linha abaixo em telas menores */
 }
 
 .logo-item {
-  width: 180px; /* Ajuste o tamanho conforme necessário */
-  height: auto;
-  opacity: 0.7; /* Estilo de opacidade para combinar com a imagem */
-  transition: opacity 0.3s;
-  
+  flex: 1 1 180px; /* Flexível para se ajustar ao espaço disponível */
+  max-width: 180px; /* Tamanho máximo para manter o layout consistente */
+  opacity: 0.7;
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Adicionado efeito de transformação */
 }
 
 .logo-item:hover {
-  opacity: 1; /* Efeito hover para clarear os logos */
+  opacity: 1;
+  transform: scale(1.05); /* Efeito de zoom suave ao passar o mouse */
 }
 
 .logo-item img {
   max-width: 100%;
   height: auto;
+  display: block; /* Remove o espaço em branco abaixo da imagem */
+}
+
+/* Estilo responsivo para telas menores */
+@media (max-width: 768px) {
+  .partners-section {
+    padding: 20px; /* Menos padding em telas menores */
+  }
+
+  h2 {
+    font-size: 28px; /* Ajuste de tamanho para cabeçalhos menores */
+    line-height: 36px;
+  }
+
+  .partners-logos {
+    gap: 20px; /* Menos espaço entre os logos em telas menores */
+  }
+
+  .logo-item {
+    flex: 1 1 120px; /* Ajuste flexível para tamanhos menores */
+    max-width: 120px; /* Tamanho máximo menor para dispositivos móveis */
+  }
 }

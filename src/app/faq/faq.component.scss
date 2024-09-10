@@ -2,56 +2,82 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-right: 20px;
-
   padding-top: 120px;
+  gap: 50px; /* Melhor espaçamento entre imagem e conteúdo */
+  max-width: 1200px; /* Limita o tamanho máximo do container */
+  margin: 0 auto; /* Centraliza o container */
 }
 
 .faq-image img {
-  max-width: 200%;
-  height: 380px;
-  margin-left: 350px;
+  max-width: 100%; /* Adapta a imagem ao container */
+  height: auto; /* Mantém a proporção da imagem */
   width: 500px;
-
-
 }
 
 .faq-content {
-  width: 30%;
-  margin-right: 400px;
+  width: 50%; /* Ajusta para ocupar melhor o espaço disponível */
+  margin-right: 0; /* Remove margem desnecessária */
 }
 
 .faq-content h2 {
-  font-family: 'poppins';
-  font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem; /* Ajustado para rem */
   margin-bottom: 20px;
   font-weight: 600;
-  line-height: 45px;
+  line-height: 1.5;
 }
 
 .faq-item {
   border: 1px solid #e0e0e0;
-  border-radius: 4px;
-  margin-bottom: 10px;
-  padding: 10px;
+  border-radius: 8px; /* Aumentado para um visual mais moderno */
+  margin-bottom: 15px; /* Aumentado para mais espaço entre itens */
+  padding: 15px;
   background-color: #f9f9f9;
+  transition: background-color 0.3s ease; /* Transição suave ao interagir */
+}
+
+.faq-item:hover {
+  background-color: #f0f0f0; /* Efeito de hover */
 }
 
 .faq-question {
   display: flex;
-  font-family: 'poppins';
-  font-size: 16px;
-  line-height: 24px;
   justify-content: space-between;
+  align-items: center;
   cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
   font-weight: 500;
+  line-height: 1.5;
 }
 
 .faq-answer {
-  font-family: 'open sans';
-  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 25.6px;
+  line-height: 1.6;
   margin-top: 10px;
   color: #666;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .faq-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .faq-image img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .faq-content {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .faq-content h2 {
+    font-size: 1.25rem;
+  }
 }
