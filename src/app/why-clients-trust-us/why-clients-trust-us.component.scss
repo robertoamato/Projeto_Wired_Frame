@@ -1,43 +1,48 @@
 .container {
   text-align: center;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 40px 20px; /* Ajuste o padding para mais espaço ao redor */
+  padding: 40px 20px;
   font-family: Arial, sans-serif;
+  background-color: #fff;
 }
 
 .container h1 {
   font-family: 'Poppins', sans-serif;
-  font-size: 2.5em; /* Aumentado para maior destaque */
+  font-size: 2.5em;
   font-weight: 600;
   margin-bottom: 20px;
+  margin-top: 50px;
 }
 
 .container p {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1.6; /* Ajuste a linha de altura para melhor legibilidade */
-  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.6;
+  font-weight: 500;
   margin-bottom: 30px;
+  
 }
 
 .content {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 20px; /* Adicionado para melhor espaçamento */
+  gap: 20px;
+  flex-wrap: wrap; /* Permite que os itens se ajustem em telas menores */
 }
 
 .images {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  justify-content: center;
 }
 
 .image {
   background-color: #ccc;
   border: 1px solid #999;
-  border-radius: 4px; /* Adiciona bordas arredondadas */
+  border-radius: 4px;
 }
 
 .large {
@@ -63,32 +68,20 @@
 .text-item {
   display: flex;
   align-items: center;
-  margin-bottom: 15px; /* Ajuste o espaçamento entre os itens */
+  margin-bottom: -5px;
 }
 
 .check {
   color: green;
   margin-right: 10px;
-  font-size: 1.2em; /* Aumentado para maior visibilidade */
-}
-
-.button {
-  margin-top: 30px; /* Ajuste o espaçamento do botão */
-  padding: 10px 20px; /* Aumentado para um melhor clique */
-  background-color: black;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 1em;
-  border-radius: 5px; /* Adiciona bordas arredondadas ao botão */
-  transition: background-color 0.3s;
+  font-size: 1.2em;
 }
 
 .button:hover {
   background-color: #333;
 }
 
-/* Responsivo */
+/* Estilo Responsivo */
 @media (max-width: 768px) {
   .content {
     flex-direction: column;
@@ -96,10 +89,8 @@
   }
 
   .text-items {
-    margin-left: 0;
+    text-align: center; /* Centraliza o texto no modo responsivo */
   }
 
-  .button {
-    margin-left: 0;
-  }
+  
 }

@@ -27,8 +27,8 @@
 .info-text p {
   margin: 5px 0 0;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 25px;
   line-height: 27.24px;
   text-align: center;
 }
@@ -36,15 +36,16 @@
 .contact-button {
   background-color: #fff;
   color: #333;
-  padding: 18px 8px; /* Corrigido: remove vírgulas e define o padding corretamente */
+  padding: 18px 8px; /*  remove vírgulas e define o padding corretamente */
   border: none;
   border-radius: 4px;
   cursor: pointer;
   height: 60px;
-  width: 150px;
+  width: 300px;
   font-size: 20px;
   line-height: 24.2px;
   transition: background-color 0.3s ease; /* Adiciona transição para o hover */
+  font-weight: 600;
 }
 
 .contact-button:hover {

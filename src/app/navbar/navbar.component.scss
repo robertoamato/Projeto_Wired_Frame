@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 10px 30px;
   background-color: #ffffff; /* Cor de fundo da barra de navegação */
   border-bottom: 1px solid #ddd; /* Linha sutil na parte inferior */
 }
@@ -16,27 +16,29 @@
   width: 50px; /* Ajuste conforme necessário */
   height: 50px; /* Ajuste conforme necessário */
   border-radius: 50%; /* Efeito de círculo */
+  margin-left: 100px;
 }
 
 .navbar-links {
   list-style: none;
   display: flex;
   margin: 0;
-  padding: 0;
+  padding: 10;
   flex-grow: 1;
-  justify-content: center; /* Centraliza os links */
+  justify-content: right; /* Centraliza os links */
   font-family: 'Open Sans', sans-serif;
+ 
 }
 
 .navbar-links li {
-  margin: 0 15px; /* Espaçamento entre os itens */
+  margin: 0 30px; /* Espaçamento entre os itens */
 }
 
 .navbar-links a {
   text-decoration: none;
   color: #000;
   font-weight: 600;
-  font-size: 16px; /* Tamanho da fonte ajustado */
+  font-size: 18px; /* Tamanho da fonte ajustado */
   transition: color 0.3s ease;
 }
 
@@ -48,13 +50,15 @@
   background-color: #000;
   color: #fff;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 50px;
   cursor: pointer;
   font-size: 16px; /* Tamanho da fonte ajustado */
   transition: background-color 0.3s ease;
   border-radius: 5px; /* Bordas arredondadas */
   font-weight: 600;
   font-family: 'Inter', sans-serif;
+  margin-right: 39px;
+  
 }
 
 .navbar-button:hover {
@@ -74,7 +78,7 @@
   }
 
   .navbar-links li {
-    margin: 10px 0; /* Espaçamento vertical entre os itens */
+    margin: 20px 0; /* Espaçamento vertical entre os itens */
   }
 
   .navbar-button {

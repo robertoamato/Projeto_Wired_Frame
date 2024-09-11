@@ -1,40 +1,94 @@
 .section-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between; /* Espaço entre os elementos */
   width: 100%;
-  height: 500px; /* Ajuste a altura conforme necessário */
-  background-color: #f5f5f5; /* Cor de fundo do container */
-  padding: 20px; /* Adiciona um padding geral */
-  box-sizing: border-box; /* Inclui o padding e border na largura total */
+  height: 600px; /* Altura ajustável, ou considere removê-la para flexibilidade */
+  background-color: #f4f4f4; /* Cor de fundo do container */
+  padding: 0; /* Remove o padding desnecessário */
+  gap: 20px; /* Espaçamento entre a imagem e o texto */
+  box-sizing: border-box; /* Inclui padding e borda na largura total */
 }
 
 .text-container {
   flex: 1;
-  background-color: #ffffff; /* Cor de fundo para o texto */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve para o efeito */
-  padding: 125px;
-  border-radius: 8px; /* Adiciona bordas arredondadas */
-  text-align: center;
+  background-color: #f4f4f4; /* Cor de fundo para o texto */
+  padding: 85px; /* Padding adequado para conteúdo espaçado */
+  border-radius: 8px; /* Bordas arredondadas */
+  text-align: left; /* Alinhamento à esquerda para melhor legibilidade */
+  margin-right: 110px; /* Espaçamento extra à direita */
+  box-sizing: border-box;
 }
+
+.image-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container img {
+  max-width: 100%; /* Garante que a imagem não ultrapasse o container */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 8px; /* Bordas arredondadas para a imagem */
+}
+
+/* Estilo responsivo para telas menores */
+@media (max-width: 1024px) {
+  .section-container {
+    height: auto; /* Deixa a altura flexível em dispositivos menores */
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    padding: 20px;
+  }
+
+  .text-container {
+    margin-right: 0; /* Remove a margem lateral em dispositivos menores */
+    padding: 40px; /* Reduz o padding em telas menores */
+    text-align: center; /* Alinha o texto ao centro para melhor legibilidade */
+  }
+
+  .image-container {
+    margin-bottom: 20px; /* Espaçamento inferior para a imagem */
+  }
+}
+
+@media (max-width: 768px) {
+  .text-container {
+    padding: 30px; /* Reduz ainda mais o padding para dispositivos móveis */
+    font-size: 0.9em; /* Ajusta o tamanho do texto em telas menores */
+  }
+
+  .image-container img {
+    width: 100%; /* Garante que a imagem ocupe todo o espaço disponível */
+    height: auto;
+  }
+}
+
 
 .text-container h1 {
   font-family: 'Poppins', sans-serif;
-  font-size: 2.5em;
+  font-size: 3em; /* Use '3em' sem o '.0' para consistência */
   font-weight: 600;
-  color: #000; /* Texto primário */
-  margin-bottom: 20px;
-  line-height: 1.2; /* Ajusta a altura da linha para melhor legibilidade */
+  color: #000; /* Mantém o texto primário */
+  margin-bottom: 20px; /* Espaçamento adequado entre título e parágrafo */
+  line-height: 1.2; /* Legibilidade otimizada */
+  text-align: left; /* Alinhamento à esquerda */
+  word-wrap: break-word; /* Quebra a palavra longa em várias linhas */
 }
 
 .text-container p {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.125em; /* Ajusta o tamanho do texto secundário */
+  font-size: 1.5em; /* Levemente reduzido para melhor equilíbrio com o título */
   font-weight: 400;
-  line-height: 1.6;
-  color: #555; /* Cor do texto secundário */
-  margin-bottom: 50px; /* Espaçamento abaixo do parágrafo */
+  line-height: 1.6; /* Linha ajustada para melhor legibilidade */
+  color: #555; /* Cor de texto secundário suave */
+  margin-bottom: 30px; /* Mantém o espaçamento */
+  text-align: left; /* Alinhamento à esquerda */
+  display: block; /* Garantir que o parágrafo seja renderizado corretamente */
+  max-width: 100%; /* Certifica-se de que o parágrafo não saia dos limites */
+  word-spacing: 0.05em; /* Aumenta o espaçamento entre palavras para melhorar a legibilidade */
 }
+
 
 .design-button {
   background-color: #000;
@@ -58,11 +112,33 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5px;
+  padding: 10px;
 }
 
 .image-container img {
-  max-width: 0%;
-  height: auto;
+  width: 900px;   // largura 
+  height: 600px;  // altura
   border-radius: 8px; /* Adiciona bordas arredondadas à imagem */
+  object-fit: cover;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .section-container {
+    flex-direction: column; /* Coloca os elementos em coluna em telas menores */
+    height: auto; /* Ajusta a altura automaticamente */
+  }
+
+  .text-container {
+    text-align: center;
+    padding: 30px; /* Reduz o padding para telas menores */
+  }
+
+  .image-container {
+    padding: 10px;
+  }
+
+  .image-container img {
+    max-width: 100%; /* Garante que a imagem não extrapole o container em telas menores */
+  }
 }
