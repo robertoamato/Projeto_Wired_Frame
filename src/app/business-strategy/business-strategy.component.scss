@@ -1,88 +1,116 @@
+/* Container principal para a seção da estratégia de negócios */
 .business-strategy-container {
-  text-align: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  padding-top: 100px;
+  text-align: center; /* Centraliza o texto no container */
+  margin: 0 auto; /* Centraliza o container horizontalmente */
+  padding: 20px; /* Adiciona espaçamento interno em todos os lados */
+  padding-top: 100px; /* Adiciona mais espaço acima do container */
+  background-color: #f8f8f8; /* Define a cor de fundo do container */
 }
 
+/* Estilo do título principal (h1) */
 h1 {
-  font-size: 2.5rem;
-  font-weight: 600;
-  line-height: 1.2;
-  margin-bottom: 20px;
-  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem; /* Define o tamanho da fonte como 2.5 rem */
+  font-weight: 600; /* Define a espessura da fonte como semibold */
+  line-height: 60px; /* Define a altura da linha para garantir legibilidade */
+  margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+  font-family: 'Poppins'; /* Define a fonte personalizada para o título */
 }
 
+/* Estilo dos parágrafos dentro do container de texto */
 p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.6;
-  font-weight: 400;
-  color: #666;
-  margin-bottom: 40px;
+  font-family: 'Open Sans'; /* Define a fonte do texto como Open Sans */
+  font-size: 1.5rem; /* Define o tamanho da fonte como 1.5 rem */
+  line-height: 38.4px; /* Define a altura da linha para garantir legibilidade */
+  font-weight: 600; /* Define a espessura da fonte como semibold */
+  color: #666; /* Define a cor do texto em cinza suave */
+  margin-bottom: 40px; /* Adiciona espaço abaixo dos parágrafos */
+  margin-top: 50px; /* Adiciona espaço acima dos parágrafos */
+  max-width: 1000px; /* Limita a largura máxima dos parágrafos */
+  margin-left: 400px; /* Posiciona o texto para a direita (deve ser ajustado para responsividade) */
+  display: flex; /* Usa flexbox para organização interna (pode ser removido se não necessário) */
 }
 
+/* Container das estatísticas */
 .stats-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  padding: 10px;
-  border-radius: 18px;
-  margin-bottom: 30px;
+  display: flex; /* Usa flexbox para organizar os itens dentro do container */
+  justify-content: space-between; /* Distribui os itens igualmente com espaço entre eles */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  gap: 50px; /* Define o espaçamento entre os itens */
+  flex-wrap: wrap; /* Permite que os itens quebrem linha quando necessário */
+  padding: 20px; /* Adiciona um pequeno espaçamento interno */
+  border-radius: 18px; /* Adiciona cantos arredondados ao container */
+  margin-bottom: 60px; /* Adiciona espaço abaixo do container */
+  margin-left: 330px; /* Posiciona o container um pouco à direita */
+  max-width: 1100px;
 }
 
+/* Estilo para cada item de estatística individual */
 .stat-item {
-  text-align: center;
-  flex: 1;
+  text-align: center; /* Centraliza o texto dentro de cada item */
+  flex: 1; /* Cada item ocupará o mesmo espaço disponível */
 }
 
+/* Estilo para o título (h3) dentro de cada item de estatística */
 .stat-item h3 {
-  font-size: 1rem;
-  font-weight: 400;
-  margin-bottom: 10px;
-  color: #333;
+  font-family: 'Poppins'; /* Define a fonte personalizada para o título */
+  font-size: 1.5rem; /* Define o tamanho da fonte como 1.5 rem */
+  font-weight: 600; /* Define a espessura da fonte como semibold */
+  margin-bottom: 10px; /* Adiciona espaço abaixo do título */
+  line-height: 36px; /* Define a altura da linha para garantir legibilidade */
+  color: #333; /* Define a cor do texto como cinza escuro */
+  margin-top: 100px; /* Adiciona espaço acima do título (excessivo, pode ser ajustado) */
+  margin-left: -50px;
 }
 
+/* Estilo para os parágrafos dentro de cada item de estatística */
 .stat-item p {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin: 0;
+  font-family: 'Poppins'; /* Define a fonte personalizada para o texto */
+  font-size: 1.5rem; /* Define o tamanho da fonte como 1.5 rem */
+  font-weight: 600; /* Define a espessura da fonte como semibold */
+  line-height: 36px; /* Define a altura da linha para garantir legibilidade */
+  margin: 0; /* Remove margens adicionais */
+  color: #606060; /* Define a cor do texto como cinza médio */
 }
 
+/* Estilo do divisor vertical */
 .divider {
-  width: 1px;
-  height: 40px;
-  background-color: #ccc;
-  margin: 0 20px;
+  width: 2px; /* Define a largura da linha divisora */
+  height: 150px; /* Define a altura da linha divisora */
+  background-color: #ccc; /* Define a cor da linha divisora como cinza claro */
+  margin: 0 20px; /* Adiciona espaçamento horizontal à esquerda e à direita */
 }
 
+/* Placeholder para imagens */
 .image-placeholder {
-  width: 100%;
-  height: 400px;
-  background-color: #ccc;
-  border: 1px solid #999;
-  margin-top: 50px;
+  width: 50%; /* Define a largura da imagem como 50% do container */
+  height: 500px; /* Define a altura da imagem */
+  background-color: #ccc; /* Define a cor de fundo como cinza claro */
+  border: 1px solid #999; /* Adiciona uma borda cinza mais escura */
+  margin-top: 50px; /* Adiciona espaço acima da imagem */
+  margin-left: 400px; /* Posiciona a imagem à direita (não muito responsivo) */
 }
 
-/* Responsividade para dispositivos móveis */
+/* Estilos para responsividade em telas menores (dispositivos móveis) */
 @media (max-width: 768px) {
   .stats-container {
-    flex-direction: column;
-    gap: 30px;
+    flex-direction: column; /* Alinha os itens de estatísticas em coluna */
+    gap: 30px; /* Aumenta o espaçamento entre os itens no modo coluna */
   }
 
   .stat-item {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Adiciona espaço entre os itens */
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 2rem; /* Reduz o tamanho da fonte do título em telas menores */
   }
 
   p {
-    font-size: 1rem;
+    font-size: 1rem; /* Reduz o tamanho da fonte dos parágrafos em telas menores */
+  }
+
+  .image-placeholder {
+    width: 100%; /* Define a largura da imagem para ocupar 100% no mobile */
+    margin-left: 0; /* Remove o deslocamento para a direita */
   }
 }

@@ -1,21 +1,26 @@
 .partners-section {
   text-align: center;
   padding: 40px 20px;
-  font-family: 'Poppins', sans-serif; /* Ou outra fonte de sua escolha */
+  font-family: 'Poppins'; 
+  margin-top: 100px;
 }
 
 .partners-section h2 {
-  font-size: 40px;
+  font-family: 'poppins';
+  font-size: 2.5em;
   font-weight: 600;
   margin-bottom: 16px;
   color: #333; /* Cor do texto (preto ou próximo de preto) */
+  line-height: 60px;
 }
 
 .partners-description {
-  font-size: 1.2em;
-  font-weight: 400;
+  font-family: 'open sans';
+  font-size: 1.5em;
+  font-weight: 600;
   color: #666; /* Cor cinza claro para o parágrafo */
-  max-width: 900px; /* Limita a largura do texto para melhorar a leitura */
+  max-width: 1000px; /* Limita a largura do texto para melhorar a leitura */
   margin: 0 auto; /* Centraliza o parágrafo */
   line-height: 1.6; /* Proporciona um bom espaçamento entre as linhas */
+  margin-top: 60px;
 }

@@ -1,6 +1,6 @@
 .container {
   text-align: center;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 40px 20px;
   font-family: Arial, sans-serif;
@@ -8,20 +8,21 @@
 }
 
 .container h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   font-size: 2.5em;
   font-weight: 600;
-  margin-bottom: 20px;
-  margin-top: 50px;
+  margin-bottom: 40px;
+  margin-top: 60px;
 }
 
 .container p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 19px;
-  line-height: 1.6;
-  font-weight: 500;
-  margin-bottom: 30px;
-  
+  font-family: 'Open Sans';
+  font-size: 1.5em;
+  line-height: 40.9px;
+  font-weight: 400;
+  margin-bottom: 50px;
+  margin-top: 0px;
+  width: auto;
 }
 
 .content {
@@ -68,13 +69,14 @@
 .text-item {
   display: flex;
   align-items: center;
-  margin-bottom: -5px;
+  margin-bottom: -25px;
 }
 
 .check {
   color: green;
   margin-right: 10px;
-  font-size: 1.2em;
+  font-size: 1.6em;
+  margin-top: -90px;
 }
 
 .button:hover {
