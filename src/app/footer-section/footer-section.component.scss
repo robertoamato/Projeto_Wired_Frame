@@ -90,8 +90,9 @@
   font-family: 'Poppins', sans-serif; /* Fonte Poppins */
   margin-bottom: 10px; /* Espaçamento inferior do título */
   line-height: 30px; /* Altura da linha */
-  font-weight: 600; /* Peso semibold */
+  font-weight: 500; /* Peso semibold */
   text-transform: uppercase; /* Títulos em maiúsculas para destaque */
+  margin-left: -40px;
 }
 
 /* Estilo dos links nas colunas do rodapé */
@@ -103,6 +104,7 @@
   font-size: 14px; /* Tamanho da fonte */
   font-family: 'Open Sans', sans-serif; /* Fonte Open Sans */
   transition: color 0.3s ease; /* Transição suave de cor ao passar o mouse */
+  margin-right: 65px;
 }
 
 .footer-column a:hover {
@@ -112,15 +114,16 @@
 /* Estilo do parágrafo nas colunas do rodapé */
 .footer-column p {
   margin: 0; /* Remove margens extras */
-  max-width: 1500px; /* Limita a largura */
+  max-width: 2500px; /* Limita a largura */
   margin-left: 100px; /* Centraliza o parágrafo dentro da coluna */
-  text-align: center;
+  text-align: left;
+  
 }
 
 /* Seção de conexões sociais */
 .connect .social-icons {
   display: flex; /* Layout flexível para ícones */
-  gap: 10px; /* Espaçamento entre ícones */
+  gap: 15px; /* Espaçamento entre ícones */
 }
 
 /* Estilo para cada ícone social */
