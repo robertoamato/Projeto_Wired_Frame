@@ -5,95 +5,97 @@
   padding: 20px; /* Adiciona espaçamento interno em todos os lados */
   padding-top: 100px; /* Adiciona mais espaço acima do container */
   background-color: #f8f8f8; /* Define a cor de fundo do container */
+  max-width: 1900px; /* Limita a largura máxima do container */
+  width: 100%; /* Garante que o container ocupe 100% da largura disponível */
 }
 
 /* Estilo do título principal (h1) */
 h1 {
-  font-size: 2.5rem; /* Define o tamanho da fonte como 2.5 rem */
-  font-weight: 600; /* Define a espessura da fonte como semibold */
-  line-height: 60px; /* Define a altura da linha para garantir legibilidade */
+  font-size: 2.5rem; /* Define o tamanho da fonte */
+  font-weight: 600; /* Define a espessura da fonte */
+  line-height: 60px; /* Define a altura da linha */
   margin-bottom: 20px; /* Adiciona espaço abaixo do título */
-  font-family: 'Poppins'; /* Define a fonte personalizada para o título */
+  font-family: 'Poppins', sans-serif; /* Define a fonte personalizada */
 }
 
-/* Estilo dos parágrafos dentro do container de texto */
+/* Estilo dos parágrafos */
 p {
-  font-family: 'Open Sans'; /* Define a fonte do texto como Open Sans */
-  font-size: 1.5rem; /* Define o tamanho da fonte como 1.5 rem */
-  line-height: 38.4px; /* Define a altura da linha para garantir legibilidade */
-  font-weight: 600; /* Define a espessura da fonte como semibold */
-  color: #666; /* Define a cor do texto em cinza suave */
+  font-family: 'Open Sans', sans-serif; /* Define a fonte */
+  font-size: 1.5rem; /* Define o tamanho da fonte */
+  line-height: 1.6; /* Melhora a legibilidade */
+  font-weight: 600; /* Define a espessura da fonte */
+  color: #666; /* Define a cor do texto */
   margin-bottom: 40px; /* Adiciona espaço abaixo dos parágrafos */
   margin-top: 50px; /* Adiciona espaço acima dos parágrafos */
-  max-width: 1000px; /* Limita a largura máxima dos parágrafos */
-  margin-left: 400px; /* Posiciona o texto para a direita (deve ser ajustado para responsividade) */
-  display: flex; /* Usa flexbox para organização interna (pode ser removido se não necessário) */
+  max-width: 1000px; /* Limita a largura dos parágrafos */
+  margin-left: auto; /* Centraliza o parágrafo */
+  margin-right: auto; /* Centraliza o parágrafo */
 }
 
 /* Container das estatísticas */
 .stats-container {
-  display: flex; /* Usa flexbox para organizar os itens dentro do container */
-  justify-content: space-between; /* Distribui os itens igualmente com espaço entre eles */
-  align-items: center; /* Alinha os itens verticalmente no centro */
-  gap: 50px; /* Define o espaçamento entre os itens */
+  display: flex; /* Usa flexbox */
+  justify-content: space-between; /* Distribui os itens com espaço entre eles */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  gap: 20px; /* Define o espaçamento entre os itens */
   flex-wrap: wrap; /* Permite que os itens quebrem linha quando necessário */
-  padding: 20px; /* Adiciona um pequeno espaçamento interno */
-  border-radius: 18px; /* Adiciona cantos arredondados ao container */
+  padding: 20px; /* Adiciona espaçamento interno */
+  border-radius: 18px; /* Adiciona cantos arredondados */
   margin-bottom: 60px; /* Adiciona espaço abaixo do container */
-  margin-left: 330px; /* Posiciona o container um pouco à direita */
-  max-width: 1100px;
+  max-width: 1100px; /* Limita a largura máxima */
+  margin: 0 auto; /* Centraliza o container */
 }
 
-/* Estilo para cada item de estatística individual */
+/* Estilo para cada item de estatística */
 .stat-item {
-  text-align: center; /* Centraliza o texto dentro de cada item */
-  flex: 1; /* Cada item ocupará o mesmo espaço disponível */
+  text-align: left; /* Alinha o texto à esquerda */
+  flex: 1; /* Cada item ocupa o mesmo espaço disponível */
+  min-width: 200px; /* Define uma largura mínima para os itens */
 }
 
 /* Estilo para o título (h3) dentro de cada item de estatística */
 .stat-item h3 {
-  font-family: 'Poppins'; /* Define a fonte personalizada para o título */
-  font-size: 1.5rem; /* Define o tamanho da fonte como 1.5 rem */
-  font-weight: 600; /* Define a espessura da fonte como semibold */
+  font-family: 'Poppins', sans-serif; /* Define a fonte */
+  font-size: 1.5rem; /* Define o tamanho da fonte */
+  font-weight: 600; /* Define a espessura da fonte */
   margin-bottom: 10px; /* Adiciona espaço abaixo do título */
-  line-height: 36px; /* Define a altura da linha para garantir legibilidade */
-  color: #333; /* Define a cor do texto como cinza escuro */
-  margin-top: 100px; /* Adiciona espaço acima do título (excessivo, pode ser ajustado) */
-  margin-left: -50px;
+  line-height: 1.2; /* Melhora a legibilidade */
+  color: #333; /* Define a cor do texto */
+  margin-top: 20px; /* Ajusta o espaçamento superior */
 }
 
 /* Estilo para os parágrafos dentro de cada item de estatística */
 .stat-item p {
-  font-family: 'Poppins'; /* Define a fonte personalizada para o texto */
-  font-size: 1.5rem; /* Define o tamanho da fonte como 1.5 rem */
-  font-weight: 600; /* Define a espessura da fonte como semibold */
-  line-height: 36px; /* Define a altura da linha para garantir legibilidade */
+  font-family: 'Poppins', sans-serif; /* Define a fonte */
+  font-size: 1.5rem; /* Define o tamanho da fonte */
+  font-weight: 600; /* Define a espessura da fonte */
+  line-height: 1.6; /* Melhora a legibilidade */
   margin: 0; /* Remove margens adicionais */
-  color: #606060; /* Define a cor do texto como cinza médio */
+  color: #606060; /* Define a cor do texto */
 }
 
 /* Estilo do divisor vertical */
 .divider {
   width: 2px; /* Define a largura da linha divisora */
-  height: 150px; /* Define a altura da linha divisora */
-  background-color: #ccc; /* Define a cor da linha divisora como cinza claro */
-  margin: 0 20px; /* Adiciona espaçamento horizontal à esquerda e à direita */
+  height: 150px; /* Define a altura da linha */
+  background-color: #ccc; /* Define a cor da linha */
+  margin: 0 20px; /* Define espaçamento horizontal */
 }
 
 /* Placeholder para imagens */
 .image-placeholder {
-  width: 50%; /* Define a largura da imagem como 50% do container */
-  height: 500px; /* Define a altura da imagem */
-  background-color: #ccc; /* Define a cor de fundo como cinza claro */
-  border: 1px solid #999; /* Adiciona uma borda cinza mais escura */
-  margin-top: 50px; /* Adiciona espaço acima da imagem */
-  margin-left: 400px; /* Posiciona a imagem à direita (não muito responsivo) */
+  width: 50%; /* Define a largura da imagem */
+  height: 500px; /* Define a altura */
+  background-color: #ccc; /* Define a cor de fundo */
+  border: 1px solid #999; /* Define a borda */
+  margin-top: 100px; /* Adiciona espaçamento superior */
+  margin: 0 auto; /* Centraliza a imagem */
 }
 
-/* Estilos para responsividade em telas menores (dispositivos móveis) */
+/* Estilos para responsividade em telas menores */
 @media (max-width: 768px) {
   .stats-container {
-    flex-direction: column; /* Alinha os itens de estatísticas em coluna */
+    flex-direction: column; /* Alinha os itens em coluna */
     gap: 30px; /* Aumenta o espaçamento entre os itens no modo coluna */
   }
 
@@ -102,15 +104,14 @@ p {
   }
 
   h1 {
-    font-size: 2rem; /* Reduz o tamanho da fonte do título em telas menores */
+    font-size: 2rem; /* Reduz o tamanho do título */
   }
 
   p {
-    font-size: 1rem; /* Reduz o tamanho da fonte dos parágrafos em telas menores */
+    font-size: 1rem; /* Reduz o tamanho da fonte dos parágrafos */
   }
 
   .image-placeholder {
-    width: 100%; /* Define a largura da imagem para ocupar 100% no mobile */
-    margin-left: 0; /* Remove o deslocamento para a direita */
+    width: 100%; /* Define a largura da imagem para 100% */
   }
 }

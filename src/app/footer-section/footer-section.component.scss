@@ -1,107 +1,152 @@
-/* contact-section.component.css */
+/* Seção de contato principal */
 .contact-section {
-  padding: 120px;
-  padding-top: 120px; /* Redundante, você pode remover se usar apenas o padding superior */
+  padding: 120px; /* Define espaçamento interno amplo */
+  /* padding-top: 120px;  Redundante, pois o padding já foi definido para todos os lados */
+  background-color: #f9f9f9; /* Adiciona um fundo leve para contraste */
+  border-top: px solid #ccc; /* Adiciona uma borda superior sutil */
+  text-align: center; /* Centraliza o conteúdo */
 }
 
+/* Banner informativo */
 .info-banner {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto 20px; /* Centraliza horizontalmente e cria espaçamento abaixo */
-  max-width: 1500px; /* Define uma largura máxima para o banner */
+  background-color: #333; /* Cor de fundo preta */
+  color: #fff; /* Cor do texto branca */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 8px; /* Arredonda os cantos do banner */
+  display: flex; /* Layout flexível para posicionamento dos itens */
+  justify-content: space-between; /* Distribui os itens com espaço entre eles */
+  align-items: center; /* Alinha os itens no centro verticalmente */
+  margin: 0 auto 20px; /* Centraliza horizontalmente e adiciona espaçamento inferior */
+  max-width: 1400px; /* Define a largura máxima do banner */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra para destaque */
 }
 
+/* Estilo do título (h2) no banner de informações */
 .info-text h2 {
-  margin: 0;
-  font-size: 34px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  line-height: 48px;
+  margin: 0; /* Remove margens extras */
+  font-size: 34px; /* Define o tamanho da fonte */
+  font-family: 'Poppins', sans-serif; /* Usa a fonte Poppins */
+  font-weight: 500; /* Define o peso da fonte */
+  line-height: 48px; /* Define a altura da linha para legibilidade */
+  margin-left: -300px; /* Espaçamento à esquerda */
+  text-transform: uppercase; /* Transforma o texto em maiúsculas para destaque */
 }
 
+/* Estilo do parágrafo dentro do banner */
 .info-text p {
-  margin: 5px 0 0;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 27.24px;
+  margin: 15px 0 0; /* Margens para espaçamento adequado */
+  font-family: 'Open Sans', sans-serif; /* Usa a fonte Open Sans */
+  font-weight: 400; /* Peso da fonte regular */
+  font-size: 25px; /* Tamanho da fonte */
+  line-height: 27.24px; /* Altura da linha ajustada */
+  text-align: center; /* Centraliza o texto */
+  margin-left: 30px; /* Espaçamento à esquerda */
+}
+
+/* Estilo do botão de contato */
+.contact-button {
+  background-color: #fff; /* Fundo branco */
+  color: #333; /* Texto preto */
+  padding: 18px 8px; /* Espaçamento interno */
+  border: none; /* Remove borda padrão */
+  border-radius: 4px; /* Arredonda os cantos do botão */
+  cursor: pointer; /* Cursor de mão ao passar sobre o botão */
+  height: 60px; /* Altura fixa */
+  width: 300px; /* Largura fixa */
+  font-size: 20px; /* Tamanho da fonte */
+  line-height: 24.2px; /* Define a altura da linha */
+  transition: background-color 0.3s ease; /* Suaviza a transição do hover */
+  font-weight: 600; /* Peso semibold */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona sombra leve ao botão */
+}
+
+/* Estilo de hover para o botão de contato */
+.contact-button:hover {
+  background-color: #eee; /* Fundo cinza claro no hover */
+  transform: scale(1.05); /* Adiciona um leve efeito de zoom */
+}
+
+/* Conteúdo do rodapé */
+.footer-content {
+  display: flex; /* Layout flexível para organizar as colunas */
+  justify-content: space-between; /* Distribui espaço entre as colunas */
+  padding: 20px 0; /* Espaçamento superior e inferior */
+  flex-wrap: wrap; /* Permite que colunas quebrem linha em telas pequenas */
+  max-width: 1600px; /* Largura máxima */
+  border-top: px solid #ccc; /* Borda superior para separar o rodapé */
+}
+
+/* Estilo para cada coluna do rodapé */
+.footer-column {
+  flex: 1; /* Colunas ocupam tamanhos proporcionais */
+  margin: 0 60px; /* Espaçamento entre colunas */
+  color: #555; /* Cor do texto cinza escuro */
+  min-width: 200px; /* Define uma largura mínima para cada coluna */
+}
+
+/* Estilo do título (h3) nas colunas do rodapé */
+.footer-column h3 {
+  font-size: 20px; /* Tamanho da fonte */
+  font-family: 'Poppins', sans-serif; /* Fonte Poppins */
+  margin-bottom: 10px; /* Espaçamento inferior do título */
+  line-height: 30px; /* Altura da linha */
+  font-weight: 600; /* Peso semibold */
+  text-transform: uppercase; /* Títulos em maiúsculas para destaque */
+}
+
+/* Estilo dos links nas colunas do rodapé */
+.footer-column a {
+  color: #555; /* Cor do link */
+  text-decoration: none; /* Remove sublinhado dos links */
+  margin-bottom: 5px; /* Espaçamento abaixo dos links */
+  display: block; /* Exibe links em blocos */
+  font-size: 14px; /* Tamanho da fonte */
+  font-family: 'Open Sans', sans-serif; /* Fonte Open Sans */
+  transition: color 0.3s ease; /* Transição suave de cor ao passar o mouse */
+}
+
+.footer-column a:hover {
+  color: #333; /* Muda cor do link ao passar o mouse */
+}
+
+/* Estilo do parágrafo nas colunas do rodapé */
+.footer-column p {
+  margin: 0; /* Remove margens extras */
+  max-width: 1500px; /* Limita a largura */
+  margin-left: 100px; /* Centraliza o parágrafo dentro da coluna */
   text-align: center;
 }
 
-.contact-button {
-  background-color: #fff;
-  color: #333;
-  padding: 18px 8px; /*  remove vírgulas e define o padding corretamente */
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  height: 60px;
-  width: 300px;
-  font-size: 20px;
-  line-height: 24.2px;
-  transition: background-color 0.3s ease; /* Adiciona transição para o hover */
-  font-weight: 600;
-}
-
-.contact-button:hover {
-  background-color: #eee; /* Efeito de hover para melhorar a usabilidade */
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 0;
-  flex-wrap: wrap; /* Permite que as colunas se movam para a linha seguinte em telas menores */
-}
-
-.footer-column {
-  flex: 1; /* Faz com que as colunas ocupem o mesmo espaço */
-  margin: 0 60px; /* Espaçamento entre colunas */
-  color: #555;
-}
-
-.footer-column h3 {
-  font-size: 20px;
-  font-family: 'Poppins', sans-serif;
-  margin-bottom: 10px;
-  line-height: 30px;
-  font-weight: 600;
-}
-
-.footer-column a {
-  color: #555;
-  text-decoration: none;
-  margin-bottom: 5px;
-  display: block; /* Ajusta links para empilhamento vertical */
-  font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.footer-column p {
-  margin: 10; /* Remove margens desnecessárias */
-}
-
+/* Seção de conexões sociais */
 .connect .social-icons {
-  display: flex;
-  gap: 10px;
+  display: flex; /* Layout flexível para ícones */
+  gap: 10px; /* Espaçamento entre ícones */
 }
 
+/* Estilo para cada ícone social */
 .social-icons .icon {
-  width: 30px;
-  height: 30px;
-  background-color: #ccc;
-  border-radius: 50%;
+  width: 30px; /* Largura fixa */
+  height: 30px; /* Altura fixa */
+  background-color: #ccc; /* Cor de fundo */
+  border-radius: 50%; /* Ícones em formato circular */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave de cor e efeito */
 }
 
+.social-icons .icon:hover {
+  background-color: #999; /* Muda cor no hover */
+  transform: scale(1.1); /* Efeito de zoom no hover */
+}
+
+/* Estilo para o logo no rodapé */
 .footer-logo {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 10px;
-  /* Corrige margens exageradas */
-  margin: 10; /* Remove margens desnecessárias */
+  width: 50px; /* Largura do logo */
+  height: 50px; /* Altura do logo */
+  margin-bottom: 10px; /* Espaçamento inferior */
+  margin-left: 100px; /* Ajusta a posição */
+  margin-top: -20px; /* Ajusta a margem superior */
+  transition: transform 0.3s ease; /* Adiciona transição suave no hover */
+}
+
+.footer-logo:hover {
+  transform: rotate(360deg); /* Gira o logo ao passar o mouse */
 }

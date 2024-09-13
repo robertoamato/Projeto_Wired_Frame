@@ -1,26 +1,30 @@
+/* Seção principal dos parceiros */
 .partners-section {
-  text-align: center;
-  padding: 40px 20px;
-  font-family: 'Poppins'; 
-  margin-top: 100px;
+  text-align: center; /* Centraliza o conteúdo dentro da seção */
+  padding: 40px 20px; /* Adiciona espaçamento interno (40px em cima/baixo e 20px nos lados) */
+  font-family: 'Poppins'; /* Define a fonte Poppins como padrão */
+  margin-top: 30px; /* Adiciona espaçamento superior de 40px */
 }
 
+/* Estilo do título (h2) da seção de parceiros */
 .partners-section h2 {
-  font-family: 'poppins';
-  font-size: 2.5em;
-  font-weight: 600;
-  margin-bottom: 16px;
-  color: #333; /* Cor do texto (preto ou próximo de preto) */
-  line-height: 60px;
+  font-family: 'Poppins', sans-serif; /* Define a fonte Poppins para o título */
+  font-size: 2.5em; /* Define o tamanho da fonte em 2.5em (relativo ao tamanho da fonte base) */
+  font-weight: 600; /* Define o peso da fonte como semibold */
+  margin-bottom: 16px; /* Adiciona espaçamento abaixo do título */
+  color: #333; /* Define a cor do texto como cinza escuro, próximo de preto */
+  line-height: 60px; /* Define uma altura de linha para garantir espaçamento vertical adequado */
 }
 
+/* Estilo da descrição (parágrafo) abaixo do título */
 .partners-description {
-  font-family: 'open sans';
-  font-size: 1.5em;
-  font-weight: 600;
-  color: #666; /* Cor cinza claro para o parágrafo */
-  max-width: 1000px; /* Limita a largura do texto para melhorar a leitura */
-  margin: 0 auto; /* Centraliza o parágrafo */
-  line-height: 1.6; /* Proporciona um bom espaçamento entre as linhas */
-  margin-top: 60px;
+  font-family: 'Open Sans', sans-serif; /* Define a fonte Open Sans para o parágrafo */
+  font-size: 1.5em; /* Define o tamanho da fonte em 1.5em */
+  font-weight: 600; /* Define o peso da fonte como semibold */
+  color: #666; /* Define a cor do texto como cinza claro */
+  max-width: 1000px; /* Limita a largura do parágrafo a 1000px para melhorar a legibilidade */
+  margin: 0 auto; /* Centraliza o parágrafo horizontalmente */
+  line-height: 1.6; /* Define o espaçamento entre as linhas como 1.6 para boa legibilidade */
+  margin-top: 40px; /* Adiciona espaçamento superior de 40px para separar o texto do título */
+  margin-bottom: 90px;
 }
