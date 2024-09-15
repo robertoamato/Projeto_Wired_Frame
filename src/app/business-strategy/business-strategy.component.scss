@@ -1,117 +1,106 @@
-/* Container principal para a seção da estratégia de negócios */
+.main-container{
+
+  background-color: #f8f8f8;
+}
+
+/* Container Principal */
 .business-strategy-container {
-  text-align: center; /* Centraliza o texto no container */
-  margin: 0 auto; /* Centraliza o container horizontalmente */
-  padding: 20px; /* Adiciona espaçamento interno em todos os lados */
-  padding-top: 100px; /* Adiciona mais espaço acima do container */
-  background-color: #f8f8f8; /* Define a cor de fundo do container */
-  max-width: 1900px; /* Limita a largura máxima do container */
-  width: 100%; /* Garante que o container ocupe 100% da largura disponível */
+  
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 1300px;
+  margin: auto;
 }
 
-/* Estilo do título principal (h1) */
-h1 {
-  font-size: 2.5rem; /* Define o tamanho da fonte */
-  font-weight: 600; /* Define a espessura da fonte */
-  line-height: 60px; /* Define a altura da linha */
-  margin-bottom: 20px; /* Adiciona espaço abaixo do título */
-  font-family: 'Poppins', sans-serif; /* Define a fonte personalizada */
+/* Título */
+.business-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-/* Estilo dos parágrafos */
-p {
-  font-family: 'Open Sans', sans-serif; /* Define a fonte */
-  font-size: 1.5rem; /* Define o tamanho da fonte */
-  line-height: 1.6; /* Melhora a legibilidade */
-  font-weight: 600; /* Define a espessura da fonte */
-  color: #666; /* Define a cor do texto */
-  margin-bottom: 40px; /* Adiciona espaço abaixo dos parágrafos */
-  margin-top: 50px; /* Adiciona espaço acima dos parágrafos */
-  max-width: 1000px; /* Limita a largura dos parágrafos */
-  margin-left: auto; /* Centraliza o parágrafo */
-  margin-right: auto; /* Centraliza o parágrafo */
+/* Descrição */
+.business-description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 70px;
+  text-align: center;
 }
 
-/* Container das estatísticas */
+/* Container de Estatísticas */
 .stats-container {
-  display: flex; /* Usa flexbox */
-  justify-content: space-between; /* Distribui os itens com espaço entre eles */
-  align-items: center; /* Alinha os itens verticalmente ao centro */
-  gap: 20px; /* Define o espaçamento entre os itens */
-  flex-wrap: wrap; /* Permite que os itens quebrem linha quando necessário */
-  padding: 20px; /* Adiciona espaçamento interno */
-  border-radius: 18px; /* Adiciona cantos arredondados */
-  margin-bottom: 60px; /* Adiciona espaço abaixo do container */
-  max-width: 1100px; /* Limita a largura máxima */
-  margin: 0 auto; /* Centraliza o container */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
 }
 
-/* Estilo para cada item de estatística */
+/* Item Individual de Estatísticas */
 .stat-item {
-  text-align: left; /* Alinha o texto à esquerda */
-  flex: 1; /* Cada item ocupa o mesmo espaço disponível */
-  min-width: 200px; /* Define uma largura mínima para os itens */
+  flex: 1;
+  text-align: center;
 }
 
-/* Estilo para o título (h3) dentro de cada item de estatística */
+/* Estilos Individuais para cada Item de Estatística */
+.stat-clients {
+  
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.stat-growth {
+  
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.stat-projects {
+  
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.stat-ratings {
+  
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Título de Cada Estatística */
 .stat-item h3 {
-  font-family: 'Poppins', sans-serif; /* Define a fonte */
-  font-size: 1.5rem; /* Define o tamanho da fonte */
-  font-weight: 600; /* Define a espessura da fonte */
-  margin-bottom: 10px; /* Adiciona espaço abaixo do título */
-  line-height: 1.2; /* Melhora a legibilidade */
-  color: #333; /* Define a cor do texto */
-  margin-top: 20px; /* Ajusta o espaçamento superior */
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 600;
+  line-height: 36px;
 }
 
-/* Estilo para os parágrafos dentro de cada item de estatística */
+/* Valor de Cada Estatística */
 .stat-item p {
-  font-family: 'Poppins', sans-serif; /* Define a fonte */
-  font-size: 1.5rem; /* Define o tamanho da fonte */
-  font-weight: 600; /* Define a espessura da fonte */
-  line-height: 1.6; /* Melhora a legibilidade */
-  margin: 0; /* Remove margens adicionais */
-  color: #606060; /* Define a cor do texto */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #606060;
+  line-height: 36px;
 }
 
-/* Estilo do divisor vertical */
+/* Divisores Entre os Itens de Estatística */
 .divider {
-  width: 2px; /* Define a largura da linha divisora */
-  height: 150px; /* Define a altura da linha */
-  background-color: #ccc; /* Define a cor da linha */
-  margin: 0 20px; /* Define espaçamento horizontal */
+  width: 2px;
+  height: 50px;
+  background-color: #ccc;
 }
 
-/* Placeholder para imagens */
+/* Placeholder para Imagem */
 .image-placeholder {
-  width: 50%; /* Define a largura da imagem */
-  height: 500px; /* Define a altura */
-  background-color: #ccc; /* Define a cor de fundo */
-  border: 1px solid #999; /* Define a borda */
-  margin-top: 100px; /* Adiciona espaçamento superior */
-  margin: 0 auto; /* Centraliza a imagem */
-}
-
-/* Estilos para responsividade em telas menores */
-@media (max-width: 768px) {
-  .stats-container {
-    flex-direction: column; /* Alinha os itens em coluna */
-    gap: 30px; /* Aumenta o espaçamento entre os itens no modo coluna */
-  }
-
-  .stat-item {
-    margin-bottom: 20px; /* Adiciona espaço entre os itens */
-  }
-
-  h1 {
-    font-size: 2rem; /* Reduz o tamanho do título */
-  }
-
-  p {
-    font-size: 1rem; /* Reduz o tamanho da fonte dos parágrafos */
-  }
-
-  .image-placeholder {
-    width: 100%; /* Define a largura da imagem para 100% */
-  }
+  background-color: #d0d0d0;
+  height: 500px;
+  border-radius: 10px;
+  margin-top: 40px;
 }

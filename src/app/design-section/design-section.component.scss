@@ -1,144 +1,158 @@
+/* Container principal da seção */
 .section-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* Espaço entre os elementos */
-  width: 100%;
-  height: 600px; /* Altura ajustável, ou considere removê-la para flexibilidade */
-  background-color: #f4f4f4; /* Cor de fundo do container */
-  padding: 0; /* Remove o padding desnecessário */
-  gap: 20px; /* Espaçamento entre a imagem e o texto */
-  box-sizing: border-box; /* Inclui padding e borda na largura total */
+  display: flex; /* Usa flexbox para alinhar os elementos dentro do container */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  justify-content: space-between; /* Distribui os itens com espaço entre eles */
+  width: 100%; /* O container ocupa 100% da largura disponível */
+  height: 600px; /* Altura fixa da seção (pode ser ajustada para responsividade) */
+  background-color: #f4f4f4; /* Cor de fundo clara */
+  padding: 0; /* Remove o padding (espaçamento interno) */
+  gap: 20px; /* Espaçamento de 20px entre a imagem e o texto */
+  box-sizing: border-box; /* Inclui padding e borda no cálculo da largura total */
 }
 
+/* Container para o texto */
 .text-container {
-  flex: 1;
-  background-color: #f4f4f4; /* Cor de fundo para o texto */
-  padding: 85px; /* Padding adequado para conteúdo espaçado */
-  border-radius: 8px; /* Bordas arredondadas */
-  text-align: left; /* Alinhamento à esquerda para melhor legibilidade */
-  margin-right: -50px; /* Espaçamento extra à direita */
-  box-sizing: border-box;
+  flex: 1; /* Faz o container de texto ocupar o espaço disponível proporcionalmente */
+  background-color: #f4f4f4; /* Mantém a mesma cor de fundo do container principal */
+  padding: 100px; /* Define um espaçamento interno para afastar o conteúdo das bordas */
+  border-radius: 8px; /* Bordas arredondadas para suavizar o layout */
+  text-align: left; /* Texto alinhado à esquerda */
+  margin-right: -200px; /* Espaço negativo à direita para ajustar o layout */
+  box-sizing: border-box; /* Garante que o padding e a borda sejam considerados na largura total */
 }
 
+/* Container para a imagem */
 .image-container {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  flex: 1; /* Ocupa o mesmo espaço que o texto */
+  display: flex; /* Flexbox para centralizar o conteúdo */
+  align-items: center; /* Alinha a imagem verticalmente ao centro */
+  justify-content: center; /* Centraliza a imagem horizontalmente */
+  padding: 10px; /* Adiciona um pequeno padding para espaçamento interno */
 }
 
+/* Estilo para a imagem dentro do container */
 .image-container img {
-  max-width: 100%; /* Garante que a imagem não ultrapasse o container */
+  max-width: 100%; /* A imagem ocupa no máximo 100% da largura do container */
   height: auto; /* Mantém a proporção da imagem */
-  border-radius: 8px; /* Bordas arredondadas para a imagem */
+  border-radius: px; /* Adiciona bordas arredondadas à imagem */
+  object-fit: cover; /* Faz a imagem cobrir todo o container sem distorção */
+  width: 900px; /* Define uma largura fixa para a imagem */
+  height: 600px; /* Define uma altura fixa para a imagem */
+  margin-right: -50px;
 }
 
-/* Estilo responsivo para telas menores */
+/* Estilo responsivo para telas menores que 1024px */
 @media (max-width: 1024px) {
   .section-container {
-    height: auto; /* Deixa a altura flexível em dispositivos menores */
-    flex-direction: column; /* Empilha os elementos verticalmente */
-    padding: 20px;
+    height: auto; /* A altura se adapta ao conteúdo em dispositivos menores */
+    flex-direction: column; /* Empilha o texto e a imagem verticalmente */
+    padding: 20px; /* Adiciona padding em dispositivos menores */
   }
 
   .text-container {
-    margin-right: 0; /* Remove a margem lateral em dispositivos menores */
-    padding: 40px; /* Reduz o padding em telas menores */
-    text-align: center; /* Alinha o texto ao centro para melhor legibilidade */
+    margin-right: 0; /* Remove a margem lateral negativa para dispositivos menores */
+    padding: 40px; /* Reduz o espaçamento interno */
+    text-align: center; /* Centraliza o texto em telas menores */
   }
 
   .image-container {
-    margin-bottom: 20px; /* Espaçamento inferior para a imagem */
+    margin-bottom: 20px; /* Adiciona espaço abaixo da imagem para separação */
   }
 }
 
+/* Estilo responsivo para telas menores que 768px (dispositivos móveis) */
 @media (max-width: 768px) {
   .text-container {
-    padding: 30px; /* Reduz ainda mais o padding para dispositivos móveis */
-    font-size: 0.9em; /* Ajusta o tamanho do texto em telas menores */
+    padding: 30px; /* Reduz ainda mais o espaçamento interno */
+    font-size: 0.9em; /* Diminui o tamanho da fonte em dispositivos móveis */
   }
 
   .image-container img {
-    width: 100%; /* Garante que a imagem ocupe todo o espaço disponível */
-    height: auto;
+    width: 100%; /* A imagem ocupa toda a largura disponível no container */
+    height: auto; /* Mantém a proporção correta */
   }
 }
 
-
+/* Estilo para o título no container de texto */
 .text-container h1 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 3em; /* Use '3em' sem o '.0' para consistência */
-  font-weight: 600;
-  color: #000; /* Mantém o texto primário */
-  margin-bottom: 20px; /* Espaçamento adequado entre título e parágrafo */
-  line-height: 1.2; /* Legibilidade otimizada */
-  text-align: left; /* Alinhamento à esquerda */
-  word-wrap: break-word; /* Quebra a palavra longa em várias linhas */
+  font-family: 'Poppins', sans-serif; /* Usa a fonte Poppins */
+  font-size: 3em; /* Tamanho grande para o título */
+  font-weight: 600; /* Peso de fonte negrito */
+  color: #000; /* Cor preta para o texto */
+  margin-bottom: 20px; /* Espaçamento abaixo do título */
+  line-height: 1.2; /* Altura da linha ajustada para melhor legibilidade */
+  text-align: left; /* Alinha o título à esquerda */
+  word-wrap: break-word; /* Quebra palavras longas em várias linhas se necessário */
 }
 
+/* Estilo para o parágrafo no container de texto */
 .text-container p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.5em; /* Levemente reduzido para melhor equilíbrio com o título */
-  font-weight: 400;
-  line-height: 1.6; /* Linha ajustada para melhor legibilidade */
-  color: #555; /* Cor de texto secundário suave */
-  margin-bottom: 30px; /* Mantém o espaçamento */
-  text-align: left; /* Alinhamento à esquerda */
-  display: block; /* Garantir que o parágrafo seja renderizado corretamente */
-  max-width: 100%; /* Certifica-se de que o parágrafo não saia dos limites */
-  word-spacing: 0.05em; /* Aumenta o espaçamento entre palavras para melhorar a legibilidade */
+  font-family: 'Open Sans', sans-serif; /* Fonte Open Sans para o parágrafo */
+  font-size: 1.5em; /* Tamanho de fonte adequado para parágrafos */
+  font-weight: 400; /* Peso regular da fonte */
+  line-height: 1.6; /* Altura da linha para melhor legibilidade */
+  color: #555; /* Cor de texto cinza suave */
+  margin-bottom: 30px; /* Espaçamento abaixo do parágrafo */
+  text-align: left; /* Texto alinhado à esquerda */
+  display: block; /* Garante que o parágrafo seja exibido como um bloco */
+  max-width: 100%; /* Limita a largura máxima para não ultrapassar o container */
+  word-spacing: 0.05em; /* Aumenta o espaçamento entre as palavras para melhorar a legibilidade */
 }
 
-
+/* Estilo para o botão de design */
 .design-button {
-  background-color: #000;
-  color: #fff;
-  border: none;
-  padding: 12px 24px;
-  cursor: pointer;
-  font-family: 'Inter', sans-serif;
-  font-size: 1.125em;
-  font-weight: 600;
-  border-radius: 4px; /* Adiciona bordas arredondadas ao botão */
-  transition: background-color 0.3s ease;
+  background-color: #000; /* Cor de fundo preta */
+  color: #fff; /* Cor do texto branca */
+  border: none; /* Remove borda padrão */
+  padding: 12px 24px; /* Espaçamento interno para tornar o botão confortável de clicar */
+  cursor: pointer; /* Muda o cursor para "pointer" ao passar sobre o botão */
+  font-family: 'Inter', sans-serif; /* Fonte Inter para o botão */
+  font-size: 1.125em; /* Tamanho da fonte */
+  font-weight: 600; /* Peso negrito da fonte */
+  border-radius: 4px; /* Bordas arredondadas para suavizar o visual do botão */
+  transition: background-color 0.3s ease; /* Transição suave na cor de fundo ao interagir */
 }
 
+/* Estilo hover para o botão de design */
 .design-button:hover {
-  background-color: #333;
+  background-color: #333; /* Muda a cor de fundo para cinza escuro ao passar o mouse */
 }
 
+/* Repetição da imagem-container para manter a consistência */
 .image-container {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
+  flex: 1; /* O container de imagem ocupa o mesmo espaço que o texto */
+  display: flex; /* Usa flexbox para organizar o conteúdo */
+  align-items: center; /* Alinha a imagem verticalmente ao centro */
+  justify-content: center; /* Centraliza a imagem horizontalmente */
+  padding: 10px; /* Adiciona padding ao redor da imagem */
 }
 
+/* Estilo para a imagem no container */
 .image-container img {
-  width: 900px;   // largura 
-  height: 600px;  // altura
-  border-radius: 8px; /* Adiciona bordas arredondadas à imagem */
-  object-fit: cover;
+  width: 900px; /* Define uma largura fixa */
+  height: 600px; /* Define uma altura fixa */
+  border-radius: 8px; /* Bordas arredondadas na imagem */
+  object-fit: cover; /* Garante que a imagem cubra o container sem distorcer */
 }
 
-/* Estilos responsivos */
+/* Estilos responsivos para dispositivos móveis */
 @media (max-width: 768px) {
   .section-container {
-    flex-direction: column; /* Coloca os elementos em coluna em telas menores */
-    height: auto; /* Ajusta a altura automaticamente */
+    flex-direction: column; /* Empilha os elementos em coluna em dispositivos menores */
+    height: auto; /* Deixa a altura flexível */
   }
 
   .text-container {
-    text-align: center;
-    padding: 30px; /* Reduz o padding para telas menores */
+    text-align: center; /* Centraliza o texto para dispositivos menores */
+    padding: 30px; /* Reduz o espaçamento interno */
   }
 
   .image-container {
-    padding: 10px;
+    padding: 10px; /* Mantém o padding em dispositivos móveis */
   }
 
   .image-container img {
-    max-width: 100%; /* Garante que a imagem não extrapole o container em telas menores */
+    max-width: 100%; /* A imagem ocupa toda a largura disponível */
   }
 }

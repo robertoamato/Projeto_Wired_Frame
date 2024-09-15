@@ -1,46 +1,44 @@
 /* Seção de contato principal */
 .contact-section {
-  padding: 120px; /* Define espaçamento interno amplo */
-  /* padding-top: 120px;  Redundante, pois o padding já foi definido para todos os lados */
-  background-color: #f9f9f9; /* Adiciona um fundo leve para contraste */
-  border-top: px solid #ccc; /* Adiciona uma borda superior sutil */
+  padding: 140px; /* Define o espaçamento interno */
+  background-color: #f9f9f9; /* Fundo da seção */
   text-align: center; /* Centraliza o conteúdo */
 }
 
 /* Banner informativo */
 .info-banner {
-  background-color: #333; /* Cor de fundo preta */
-  color: #fff; /* Cor do texto branca */
+  background-color: #333; /* Fundo preto */
+  color: #fff; /* Texto branco */
   padding: 20px; /* Espaçamento interno */
-  border-radius: 8px; /* Arredonda os cantos do banner */
-  display: flex; /* Layout flexível para posicionamento dos itens */
-  justify-content: space-between; /* Distribui os itens com espaço entre eles */
-  align-items: center; /* Alinha os itens no centro verticalmente */
-  margin: 0 auto 20px; /* Centraliza horizontalmente e adiciona espaçamento inferior */
-  max-width: 1400px; /* Define a largura máxima do banner */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra para destaque */
+  border-radius: 8px; /* Cantos arredondados */
+  display: flex; /* Layout flexível */
+  justify-content: space-between; /* Espaço entre elementos */
+  align-items: center; /* Centraliza verticalmente */
+  margin: 0 auto 20px; /* Centraliza horizontalmente e adiciona margem inferior */
+  max-width: 1400px; /* Largura máxima do banner */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  margin-top: -200px;
+  margin-left: 50px;
 }
 
-/* Estilo do título (h2) no banner de informações */
+/* Estilo do título no banner de informações */
 .info-text h2 {
-  margin: 0; /* Remove margens extras */
-  font-size: 34px; /* Define o tamanho da fonte */
-  font-family: 'Poppins', sans-serif; /* Usa a fonte Poppins */
-  font-weight: 500; /* Define o peso da fonte */
-  line-height: 48px; /* Define a altura da linha para legibilidade */
-  margin-left: -300px; /* Espaçamento à esquerda */
-  text-transform: uppercase; /* Transforma o texto em maiúsculas para destaque */
+  margin: 0; /* Remove margens */
+  font-size: 34px; /* Tamanho da fonte */
+  font-family: 'Poppins', sans-serif; /* Fonte Poppins */
+  font-weight: 500; /* Peso da fonte */
+  line-height: 48px; /* Altura da linha */
+  text-transform: uppercase; /* Texto em maiúsculas */
+  text-align: left;
 }
 
 /* Estilo do parágrafo dentro do banner */
 .info-text p {
-  margin: 15px 0 0; /* Margens para espaçamento adequado */
-  font-family: 'Open Sans', sans-serif; /* Usa a fonte Open Sans */
-  font-weight: 400; /* Peso da fonte regular */
+  margin: 15px 0 0; /* Margem superior para espaçamento */
+  font-family: 'Open Sans', sans-serif; /* Fonte Open Sans */
   font-size: 25px; /* Tamanho da fonte */
-  line-height: 27.24px; /* Altura da linha ajustada */
-  text-align: center; /* Centraliza o texto */
-  margin-left: 30px; /* Espaçamento à esquerda */
+  line-height: 27px; /* Altura da linha */
+  text-align: center; /* Texto centralizado */
 }
 
 /* Estilo do botão de contato */
@@ -48,108 +46,103 @@
   background-color: #fff; /* Fundo branco */
   color: #333; /* Texto preto */
   padding: 18px 8px; /* Espaçamento interno */
-  border: none; /* Remove borda padrão */
-  border-radius: 4px; /* Arredonda os cantos do botão */
-  cursor: pointer; /* Cursor de mão ao passar sobre o botão */
+  border-radius: 4px; /* Cantos arredondados */
+  cursor: pointer; /* Cursor de mão */
   height: 60px; /* Altura fixa */
   width: 300px; /* Largura fixa */
   font-size: 20px; /* Tamanho da fonte */
-  line-height: 24.2px; /* Define a altura da linha */
-  transition: background-color 0.3s ease; /* Suaviza a transição do hover */
-  font-weight: 600; /* Peso semibold */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona sombra leve ao botão */
+  font-weight: 600; /* Fonte semibold */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave */
 }
 
-/* Estilo de hover para o botão de contato */
+/* Efeito de hover no botão */
 .contact-button:hover {
-  background-color: #eee; /* Fundo cinza claro no hover */
-  transform: scale(1.05); /* Adiciona um leve efeito de zoom */
+  background-color: #eee; /* Fundo cinza claro */
+  transform: scale(1.05); /* Efeito de zoom */
 }
 
 /* Conteúdo do rodapé */
 .footer-content {
-  display: flex; /* Layout flexível para organizar as colunas */
-  justify-content: space-between; /* Distribui espaço entre as colunas */
+  display: flex; /* Layout flexível */
+  justify-content: space-between; /* Espaço entre colunas */
   padding: 20px 0; /* Espaçamento superior e inferior */
-  flex-wrap: wrap; /* Permite que colunas quebrem linha em telas pequenas */
-  max-width: 1600px; /* Largura máxima */
-  border-top: px solid #ccc; /* Borda superior para separar o rodapé */
+  flex-wrap: wrap; /* Quebra de linha em telas pequenas */
+  max-width: 1500px; /* Largura máxima */
 }
 
-/* Estilo para cada coluna do rodapé */
+/* Colunas do rodapé */
 .footer-column {
-  flex: 1; /* Colunas ocupam tamanhos proporcionais */
-  margin: 0 60px; /* Espaçamento entre colunas */
-  color: #555; /* Cor do texto cinza escuro */
-  min-width: 200px; /* Define uma largura mínima para cada coluna */
-}
-
-/* Estilo do título (h3) nas colunas do rodapé */
-.footer-column h3 {
-  font-size: 20px; /* Tamanho da fonte */
-  font-family: 'Poppins', sans-serif; /* Fonte Poppins */
-  margin-bottom: 10px; /* Espaçamento inferior do título */
-  line-height: 30px; /* Altura da linha */
-  font-weight: 500; /* Peso semibold */
-  text-transform: uppercase; /* Títulos em maiúsculas para destaque */
-  margin-left: -40px;
-}
-
-/* Estilo dos links nas colunas do rodapé */
-.footer-column a {
-  color: #555; /* Cor do link */
-  text-decoration: none; /* Remove sublinhado dos links */
-  margin-bottom: 5px; /* Espaçamento abaixo dos links */
-  display: block; /* Exibe links em blocos */
-  font-size: 14px; /* Tamanho da fonte */
-  font-family: 'Open Sans', sans-serif; /* Fonte Open Sans */
-  transition: color 0.3s ease; /* Transição suave de cor ao passar o mouse */
-  margin-right: 65px;
-}
-
-.footer-column a:hover {
-  color: #333; /* Muda cor do link ao passar o mouse */
-}
-
-/* Estilo do parágrafo nas colunas do rodapé */
-.footer-column p {
-  margin: 0; /* Remove margens extras */
-  max-width: 2500px; /* Limita a largura */
-  margin-left: 100px; /* Centraliza o parágrafo dentro da coluna */
-  text-align: left;
+  flex: 1; /* Colunas proporcionais */
+  margin: 0 10px; /* Diminui o espaçamento entre colunas */
+  color: #555; /* Texto cinza escuro */
+  min-width: 150px; /* Largura mínima */
   
 }
 
-/* Seção de conexões sociais */
+/* Título das colunas */
+.footer-column h3 {
+  font-size: 20px; /* Tamanho da fonte */
+  font-family: 'Poppins', sans-serif; /* Fonte Poppins */
+  margin-bottom: 10px; /* Margem inferior */
+  text-transform: uppercase; /* Texto em maiúsculas */
+  margin-left: -50px;
+  
+}
+
+/* Links nas colunas do rodapé */
+.footer-column a {
+  color: #555; /* Cor do link */
+  text-decoration: none; /* Remove sublinhado */
+  margin-bottom: 5px; /* Espaçamento entre links */
+  display: block; /* Links em blocos */
+  font-size: 14px; /* Tamanho da fonte */
+  font-family: 'Open Sans', sans-serif; /* Fonte Open Sans */
+  transition: color 0.3s ease; /* Transição de cor */
+  margin-left: -50px;
+}
+
+.footer-column a:hover {
+  color: #333; /* Cor do link ao passar o mouse */
+}
+
+/* Parágrafo nas colunas do rodapé */
+.footer-column p {
+  margin: 0; /* Remove margens extras */
+  max-width: 250px; /* Largura máxima do parágrafo */
+  margin-left: 10px; /* Alinha à esquerda */
+}
+
+/* Seção de ícones sociais */
 .connect .social-icons {
-  display: flex; /* Layout flexível para ícones */
-  gap: 15px; /* Espaçamento entre ícones */
+  display: flex; /* Layout flexível */
+  gap: 15px; /* Reduz o espaçamento entre ícones */
+  margin-left: 20px;
 }
 
 /* Estilo para cada ícone social */
 .social-icons .icon {
   width: 30px; /* Largura fixa */
   height: 30px; /* Altura fixa */
-  background-color: #ccc; /* Cor de fundo */
-  border-radius: 50%; /* Ícones em formato circular */
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave de cor e efeito */
+  background-color: #ccc; /* Fundo cinza */
+  border-radius: 50%; /* Ícones circulares */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave */
+  
 }
 
 .social-icons .icon:hover {
-  background-color: #999; /* Muda cor no hover */
+  background-color: #999; /* Cor de fundo no hover */
   transform: scale(1.1); /* Efeito de zoom no hover */
 }
 
-/* Estilo para o logo no rodapé */
+/* Estilo do logo no rodapé */
 .footer-logo {
   width: 50px; /* Largura do logo */
   height: 50px; /* Altura do logo */
-  margin-bottom: 10px; /* Espaçamento inferior */
-  margin-left: 100px; /* Ajusta a posição */
-  margin-top: -20px; /* Ajusta a margem superior */
-  transition: transform 0.3s ease; /* Adiciona transição suave no hover */
+  margin-bottom: 10px; /* Margem inferior */
+  transition: transform 0.3s ease; /* Transição suave no hover */
 }
 
 .footer-logo:hover {
-  transform: rotate(360deg); /* Gira o logo ao passar o mouse */
+  transform: rotate(360deg); /* Gira o logo no hover */
 }
