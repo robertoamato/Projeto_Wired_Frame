@@ -48,7 +48,7 @@
   padding: 18px 8px; /* Espaçamento interno */
   border-radius: 4px; /* Cantos arredondados */
   cursor: pointer; /* Cursor de mão */
-  height: 60px; /* Altura fixa */
+  height: 70px; /* Altura fixa */
   width: 300px; /* Largura fixa */
   font-size: 20px; /* Tamanho da fonte */
   font-weight: 600; /* Fonte semibold */
@@ -139,8 +139,10 @@
 .footer-logo {
   width: 50px; /* Largura do logo */
   height: 50px; /* Altura do logo */
-  margin-bottom: 10px; /* Margem inferior */
+  margin-bottom: 20px; /* Margem inferior */
   transition: transform 0.3s ease; /* Transição suave no hover */
+  margin-left: -180px;
+  
 }
 
 .footer-logo:hover {
