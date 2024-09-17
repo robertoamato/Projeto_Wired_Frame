@@ -6,7 +6,8 @@
   padding: 10px 30px;
   background-color: #ffffff;
   border-bottom: 1px solid #ddd;
-  position: relative; /* Necessário para posicionar o menu toggle em dispositivos móveis */
+  position: relative;
+  z-index: 1000; /* Garante que a barra de navegação esteja sempre sobre outros elementos */
 }
 
 /* Logo da barra de navegação */
@@ -32,6 +33,7 @@
   justify-content: flex-end;
   font-family: 'Open Sans', sans-serif;
   gap: 30px; /* Espaçamento horizontal entre os links */
+  transition: all 0.3s ease; /* Transição suave ao abrir o menu móvel */
 }
 
 /* Estilo de cada item da lista de links */
@@ -44,7 +46,7 @@
   text-decoration: none;
   color: #000;
   font-weight: 600;
-  font-size: 16px; /* Tamanho da fonte ajustado para melhor visualização em dispositivos móveis */
+  font-size: 16px;
   transition: color 0.3s ease;
 }
 
@@ -58,9 +60,9 @@
   background-color: #000;
   color: #fff;
   border: none;
-  padding: 10px 20px; /* Ajustado para melhor ajuste em telas menores */
+  padding: 10px 20px;
   cursor: pointer;
-  font-size: 16px; /* Tamanho da fonte ajustado para melhor visualização */
+  font-size: 16px;
   transition: background-color 0.3s ease;
   border-radius: 5px;
   font-weight: 600;
@@ -74,7 +76,7 @@
 
 /* Menu toggle para telas pequenas */
 .menu-toggle {
-  display: none; /* Oculta o botão de menu toggle por padrão */
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -99,17 +101,17 @@
   }
 
   .navbar-links {
-    display: none; /* Oculta os links inicialmente em dispositivos móveis */
+    display: none;
     flex-direction: column;
     width: 100%;
     margin-top: 10px;
     padding: 0;
-    background-color: #ffffff; /* Fundo branco para o menu dropdown */
-    position: absolute; /* Posiciona o menu dropdown */
-    top: 60px; /* Ajuste conforme necessário */
+    background-color: #ffffff;
+    position: absolute;
+    top: 60px;
     left: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* Garante que o menu dropdown apareça sobre outros elementos */
+    z-index: 1000;
   }
 
   .navbar-links.show {
@@ -117,7 +119,7 @@
   }
 
   .navbar-links li {
-    margin: 10px 0; /* Espaçamento vertical entre os itens da lista */
+    margin: 10px 0;
   }
 
   .navbar-button {
@@ -126,7 +128,7 @@
   }
 
   .menu-toggle {
-    display: flex; /* Mostra o botão de menu toggle em dispositivos móveis */
+    display: flex;
   }
 }
 
@@ -138,11 +140,11 @@
   }
 
   .navbar-links a {
-    font-size: 14px; /* Ajusta o tamanho da fonte dos links */
+    font-size: 14px;
   }
 
   .navbar-button {
-    font-size: 14px; /* Ajusta o tamanho da fonte do botão */
-    padding: 8px 16px; /* Ajusta o padding do botão */
+    font-size: 14px;
+    padding: 8px 16px;
   }
 }
