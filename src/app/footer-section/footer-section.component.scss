@@ -1,150 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+}
+
 /* Seção de contato principal */
 .contact-section {
-  padding: 140px; /* Define o espaçamento interno */
-  background-color: #f9f9f9; /* Fundo da seção */
-  text-align: center; /* Centraliza o conteúdo */
+  padding: 140px;
+  background-color: #f9f9f9;
+  text-align: center;
 }
 
 /* Banner informativo */
 .info-banner {
-  background-color: #333; /* Fundo preto */
-  color: #fff; /* Texto branco */
-  padding: 20px; /* Espaçamento interno */
-  border-radius: 8px; /* Cantos arredondados */
-  display: flex; /* Layout flexível */
-  justify-content: space-between; /* Espaço entre elementos */
-  align-items: center; /* Centraliza verticalmente */
-  margin: 0 auto 20px; /* Centraliza horizontalmente e adiciona margem inferior */
-  max-width: 1400px; /* Largura máxima do banner */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 20px;
+  max-width: 1400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-top: -200px;
   margin-left: 50px;
 }
 
-/* Estilo do título no banner de informações */
 .info-text h2 {
-  margin: 0; /* Remove margens */
-  font-size: 34px; /* Tamanho da fonte */
-  font-family: 'Poppins', sans-serif; /* Fonte Poppins */
-  font-weight: 500; /* Peso da fonte */
-  line-height: 48px; /* Altura da linha */
-  text-transform: uppercase; /* Texto em maiúsculas */
+  margin: 0;
+  font-size: 34px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  line-height: 48px;
+  text-transform: uppercase;
   text-align: left;
 }
 
-/* Estilo do parágrafo dentro do banner */
 .info-text p {
-  margin: 15px 0 0; /* Margem superior para espaçamento */
-  font-family: 'Open Sans', sans-serif; /* Fonte Open Sans */
-  font-size: 25px; /* Tamanho da fonte */
-  line-height: 27px; /* Altura da linha */
-  text-align: center; /* Texto centralizado */
+  margin: 15px 0 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  line-height: 27px;
+  text-align: center;
 }
 
-/* Estilo do botão de contato */
 .contact-button {
-  background-color: #fff; /* Fundo branco */
-  color: #333; /* Texto preto */
-  padding: 18px 8px; /* Espaçamento interno */
-  border-radius: 4px; /* Cantos arredondados */
-  cursor: pointer; /* Cursor de mão */
-  height: 70px; /* Altura fixa */
-  width: 300px; /* Largura fixa */
-  font-size: 20px; /* Tamanho da fonte */
-  font-weight: 600; /* Fonte semibold */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave */
+  background-color: #fff;
+  color: #333;
+  padding: 18px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 70px;
+  width: 300px;
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Efeito de hover no botão */
 .contact-button:hover {
-  background-color: #eee; /* Fundo cinza claro */
-  transform: scale(1.05); /* Efeito de zoom */
+  background-color: #eee;
+  transform: scale(1.05);
 }
 
 /* Conteúdo do rodapé */
 .footer-content {
-  display: flex; /* Layout flexível */
-  justify-content: space-between; /* Espaço entre colunas */
-  padding: 20px 0; /* Espaçamento superior e inferior */
-  flex-wrap: wrap; /* Quebra de linha em telas pequenas */
-  max-width: 1500px; /* Largura máxima */
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  flex-wrap: wrap;
+  max-width: 1300px;
 }
 
-/* Colunas do rodapé */
 .footer-column {
-  flex: 1; /* Colunas proporcionais */
-  margin: 0 10px; /* Diminui o espaçamento entre colunas */
-  color: #555; /* Texto cinza escuro */
-  min-width: 150px; /* Largura mínima */
-  
+  flex: 1;
+  margin: 0 10px;
+  color: #555;
+  min-width: 150px;
 }
 
-/* Título das colunas */
 .footer-column h3 {
-  font-size: 20px; /* Tamanho da fonte */
-  font-family: 'Poppins', sans-serif; /* Fonte Poppins */
-  margin-bottom: 10px; /* Margem inferior */
-  text-transform: uppercase; /* Texto em maiúsculas */
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+  text-transform: uppercase;
   margin-left: -50px;
-  
 }
 
-/* Links nas colunas do rodapé */
 .footer-column a {
-  color: #555; /* Cor do link */
-  text-decoration: none; /* Remove sublinhado */
-  margin-bottom: 5px; /* Espaçamento entre links */
-  display: block; /* Links em blocos */
-  font-size: 14px; /* Tamanho da fonte */
-  font-family: 'Open Sans', sans-serif; /* Fonte Open Sans */
-  transition: color 0.3s ease; /* Transição de cor */
+  color: #555;
+  text-decoration: none;
+  margin-bottom: 5px;
+  display: block;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  transition: color 0.3s ease;
   margin-left: -50px;
 }
 
 .footer-column a:hover {
-  color: #333; /* Cor do link ao passar o mouse */
+  color: #333;
 }
 
-/* Parágrafo nas colunas do rodapé */
 .footer-column p {
-  margin: 0; /* Remove margens extras */
-  max-width: 250px; /* Largura máxima do parágrafo */
-  margin-left: 10px; /* Alinha à esquerda */
+  margin: 0;
+  max-width: 250px;
+  margin-left: 10px;
 }
 
 /* Seção de ícones sociais */
 .connect .social-icons {
-  display: flex; /* Layout flexível */
-  gap: 15px; /* Reduz o espaçamento entre ícones */
+  display: flex;
+  gap: 15px;
   margin-left: 20px;
 }
 
-/* Estilo para cada ícone social */
 .social-icons .icon {
-  width: 30px; /* Largura fixa */
-  height: 30px; /* Altura fixa */
-  background-color: #ccc; /* Fundo cinza */
-  border-radius: 50%; /* Ícones circulares */
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave */
-  
+  width: 30px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .social-icons .icon:hover {
-  background-color: #999; /* Cor de fundo no hover */
-  transform: scale(1.1); /* Efeito de zoom no hover */
+  background-color: #999;
+  transform: scale(1.1);
 }
 
-/* Estilo do logo no rodapé */
 .footer-logo {
-  width: 50px; /* Largura do logo */
-  height: 50px; /* Altura do logo */
-  margin-bottom: 20px; /* Margem inferior */
-  transition: transform 0.3s ease; /* Transição suave no hover */
-  margin-left: -180px;
-  
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+  margin-left: -10px;
 }
 
 .footer-logo:hover {
-  transform: rotate(360deg); /* Gira o logo no hover */
+  transform: rotate(360deg);
+}
+
+/* Breakpoints mais utilizados */
+
+/* Mobile */
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 80px;
+  }
+
+  .info-banner {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .info-text h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .contact-button {
+    width: 100%;
+  }
+}
+
+/* Extra small devices */
+@media (min-width: 481px) and (max-width: 767px) {
+  .contact-section {
+    padding: 100px;
+  }
+
+  .info-banner {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .info-text h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .contact-button {
+    width: 80%;
+  }
+}
+
+/* Small tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact-section {
+    padding: 120px;
+  }
+
+  .info-text h2 {
+    font-size: 30px;
+    text-align: left;
+  }
+
+  .contact-button {
+    width: 60%;
+  }
+}
+
+/* Large tablets/laptops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contact-section {
+    padding: 140px;
+  }
+
+  .info-text h2 {
+    font-size: 32px;
+  }
+
+  .contact-button {
+    width: 50%;
+  }
+}
+
+/* EDesktops */
+@media (min-width: 1200px) and (max-width: 1919px) {
+  .contact-section {
+    padding: 140px;
+  }
+
+  .info-text h2 {
+    font-size: 34px;
+  }
+
+  .contact-button {
+    width: 300px;
+  }
+}
+
+/* Extra large screens */
+@media (min-width: 1920px) {
+  .contact-section {
+    padding: 160px;
+  }
+
+  .info-text h2 {
+    font-size: 36px;
+  }
+
+  .contact-button {
+    width: 400px;
+  }
 }

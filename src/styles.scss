@@ -1,6 +1,58 @@
-
-/* styles.css ou styles.scss */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+}
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  /* Adicione aqui outras personalizações para mobile */
+}
+
+/* Extra small devices (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+  /* Adicione aqui outras personalizações para dispositivos extra pequenos */
+}
+
+/* Small tablets (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-size: 18px;
+  }
+  /* Adicione aqui outras personalizações para tablets pequenos */
+}
+
+/* Large tablets/laptops (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  body {
+    font-size: 20px;
+  }
+  /* Adicione aqui outras personalizações para tablets grandes e laptops */
+}
+
+/* EDesktops (1200px - 1919px) */
+@media (min-width: 1200px) and (max-width: 1919px) {
+  body {
+    font-size: 22px;
+  }
+  /* Adicione aqui outras personalizações para desktops */
+}
+
+/* Extra large screens (min-width: 1920px) */
+@media (min-width: 1920px) {
+  body {
+    font-size: 24px;
+  }
+  /* Adicione aqui outras personalizações para telas muito grandes */
+}

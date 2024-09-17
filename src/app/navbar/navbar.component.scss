@@ -1,88 +1,95 @@
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 30px;
+  display: flex; /* Define layout flexível para alinha os itens */
+  align-items: center; /* Alinha verticalmente os itens ao centro */
+  justify-content: space-between; /* Distribui o conteúdo com espaço entre os itens */
+  padding: 10px 30px; /* Adiciona espaçamento interno na parte superior/inferior e laterais */
   background-color: #ffffff; /* Cor de fundo da barra de navegação */
-  border-bottom: 1px solid #ddd; /* Linha sutil na parte inferior */
+  border-bottom: 1px solid #ddd; /* Adiciona uma linha sutil na parte inferior */
 }
 
+/* Logo da barra de navegação */
 .navbar-logo {
-  display: flex;
-  align-items: center;
+  display: flex; /* Layout flexível para alinhar o logo */
+  align-items: center; /* Alinha verticalmente o logo */
 }
 
+/* Estilo da imagem do logo */
 .navbar-logo img {
-  width: 50px; /* Ajuste conforme necessário */
-  height: 50px; /* Ajuste conforme necessário */
-  border-radius: 50%; /* Efeito de círculo */
-  margin-left: 100px;
+  width: 50px; /* Largura fixa do logo, ajustável conforme necessário */
+  height: 50px; /* Altura fixa do logo, ajustável conforme necessário */
+  border-radius: 50%; /* Adiciona efeito de círculo ao logo */
+  margin-left: 100px; /* Espaçamento à esquerda do logo */
 }
 
+/* Estilo da lista de links na navegação */
 .navbar-links {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 10;
-  flex-grow: 1;
-  justify-content: right; /* Centraliza os links */
-  font-family: 'Open Sans', sans-serif;
- 
+  list-style: none; /* Remove os marcadores de lista padrão */
+  display: flex; /* Exibe os links em linha */
+  margin: 0; /* Remove margens externas */
+  padding: 10px; /* Espaçamento interno */
+  flex-grow: 1; /* Faz a lista ocupar o espaço restante */
+  justify-content: right; /* Alinha os links à direita */
+  font-family: 'Open Sans', sans-serif; /* Define a fonte dos links */
 }
 
+/* Estilo de cada item da lista de links */
 .navbar-links li {
-  margin: 0 30px; /* Espaçamento entre os itens */
+  margin: 0 30px; /* Define espaçamento horizontal entre os links */
 }
 
+/* Estilo dos links de navegação */
 .navbar-links a {
-  text-decoration: none;
-  color: #000;
-  font-weight: 600;
-  font-size: 18px; /* Tamanho da fonte ajustado */
-  transition: color 0.3s ease;
+  text-decoration: none; /* Remove sublinhado dos links */
+  color: #000; /* Define a cor do texto dos links */
+  font-weight: 600; /* Define a espessura da fonte */
+  font-size: 1.125px; /* Tamanho da fonte */
+  transition: color 0.3s ease; /* Transição suave da cor ao passar o mouse */
 }
 
+/* Efeito hover nos links */
 .navbar-links a:hover {
-  color: #007BFF; /* Cor de destaque no hover */
+  color: #007BFF; /* Cor de destaque ao passar o mouse */
 }
 
+/* Estilo do botão na barra de navegação */
 .navbar-button {
-  background-color: #000;
-  color: #fff;
-  border: none;
-  padding: 10px 50px;
-  cursor: pointer;
-  font-size: 16px; /* Tamanho da fonte ajustado */
-  transition: background-color 0.3s ease;
+  background-color: #000; /* Cor de fundo preta para o botão */
+  color: #fff; /* Cor do texto branca */
+  border: none; /* Remove borda padrão */
+  padding: 10px 50px; /* Espaçamento interno no botão */
+  cursor: pointer; /* Define o cursor como ponteiro ao passar sobre o botão */
+  font-size: 1em; /* Tamanho da fonte */
+  transition: background-color 0.3s ease; /* Transição suave da cor de fundo ao passar o mouse */
   border-radius: 5px; /* Bordas arredondadas */
-  font-weight: 600;
-  font-family: 'Inter', sans-serif;
-  margin-right: 39px;
-  
+  font-weight: 600; /* Espessura da fonte */
+  font-family: 'Inter', sans-serif; /* Fonte do botão */
+  margin-right: 39px; /* Espaçamento à direita do botão */
 }
 
+/* Efeito hover no botão */
 .navbar-button:hover {
-  background-color: #333;
+  background-color: #333; /* Cor de fundo mais escura ao passar o mouse */
 }
 
+/* Responsividade para telas menores que 768px */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: column; /* Muda o layout para coluna em telas pequenas */
+    align-items: flex-start; /* Alinha os itens à esquerda */
   }
 
   .navbar-links {
-    flex-direction: column;
-    width: 100%;
-    margin-top: 10px;
+    flex-direction: column; /* Muda a direção dos links para coluna */
+    width: 100%; /* Os links ocupam 100% da largura */
+    margin-top: 10px; /* Adiciona espaçamento superior */
   }
 
   .navbar-links li {
-    margin: 20px 0; /* Espaçamento vertical entre os itens */
+    margin: 20px 0; /* Espaçamento vertical entre os itens da lista */
   }
 
   .navbar-button {
-    margin-top: 10px;
-    width: 100%; /* Ajuste o botão para largura total */
+    margin-top: 10px; /* Adiciona espaçamento superior ao botão */
+    width: 100%; /* Botão ocupa toda a largura disponível */
   }
 }
