@@ -1,85 +1,134 @@
 .faq-container {
-  display: flex; /* Define um layout flexível para organizar os itens em linha */
-  justify-content: space-between; /* Espaça os elementos igualmente ao longo do eixo principal */
-  align-items: flex-start; /* Alinha os itens ao início do eixo cruzado (topo) */
-  padding-top: 120px; /* Adiciona espaçamento superior no container */
-  gap: 50px; /* Define o espaçamento entre a imagem e o conteúdo de FAQ */
-  max-width: 1200px; /* Limita a largura máxima do container para controle de layout */
-  margin: 0 auto; /* Centraliza o container horizontalmente */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 120px;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Permite que o conteúdo se ajuste ao layout em telas menores */
 }
 
 .faq-image img {
-  max-width: 100%; /* Define que a imagem ocupará no máximo 100% do container */
-  height: 400px; /* Mantém a proporção original da imagem */
-  width: 700px; /* Define uma largura fixa de 500px para a imagem */
-  margin-bottom: 200px;
-  margin-left: -100px;
+  max-width: 100%;
+  height: auto; /* Remove a altura fixa para permitir que a imagem se redimensione proporcionalmente */
+  width: 700px;
+  margin-bottom: 50px;
+  margin-left: -50px; /* Reduzido para menos deslocamento lateral */
 }
 
 .faq-content {
-  width: 50%; /* Define que o conteúdo do FAQ ocupará 50% da largura do container */
-  margin-right: 0; /* Remove qualquer margem à direita */
+  width: 50%;
+  margin-right: 0;
 }
 
 .faq-content h2 {
-  font-family: 'Poppins', sans-serif; /* Define a fonte para o título usando 'Poppins' */
-  font-size: 1.5rem; /* Define o tamanho da fonte em unidades rem, para melhor escalabilidade */
-  margin-bottom: 20px; /* Adiciona margem inferior de 20px para espaçamento */
-  font-weight: 600; /* Define um peso de fonte semi-negrito */
-  line-height: 1.5; /* Ajusta a altura da linha para melhor legibilidade */
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem; /* Aumentado para melhor legibilidade em telas grandes */
+  margin-bottom: 20px;
+  font-weight: 600;
+  line-height: 1.5;
 }
 
 .faq-item {
-  border: 1px solid #e0e0e0; /* Adiciona uma borda cinza clara ao redor de cada item */
-  border-radius: 8px; /* Arredonda os cantos dos itens de FAQ */
-  margin-bottom: 15px; /* Adiciona margem inferior entre os itens */
-  padding: 15px; /* Adiciona espaçamento interno ao item */
-  background-color: #f9f9f9; /* Define um fundo cinza claro */
-  transition: background-color 0.3s ease; /* Suaviza a transição de cor ao passar o mouse */
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
 }
 
 .faq-item:hover {
-  background-color: #f0f0f0; /* Muda a cor de fundo ao passar o mouse no item */
+  background-color: #f0f0f0;
 }
 
 .faq-question {
-  display: flex; /* Organiza a pergunta em linha com ícones ou outros elementos */
-  justify-content: space-between; /* Espaça o conteúdo igualmente ao longo da linha */
-  align-items: center; /* Alinha os elementos ao centro verticalmente */
-  cursor: pointer; /* Mostra um cursor de mão para indicar que é clicável */
-  font-family: 'Poppins', sans-serif; /* Define a fonte da pergunta */
-  font-size: 1rem; /* Define o tamanho da fonte da pergunta */
-  font-weight: 500; /* Define o peso da fonte como semi-negrito */
-  line-height: 1.5; /* Define a altura da linha para legibilidade */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 .faq-answer {
-  font-family: 'Open Sans', sans-serif; /* Define a fonte para as respostas usando 'Open Sans' */
-  font-size: 1rem; /* Define o tamanho da fonte para as respostas */
-  font-weight: 400; /* Define o peso da fonte como normal */
-  line-height: 1.6; /* Ajusta a altura da linha para melhor legibilidade */
-  margin-top: 10px; /* Adiciona espaçamento superior entre a pergunta e a resposta */
-  color: #666; /* Define a cor do texto como cinza médio */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-top: 10px;
+  color: #666;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
+/* Estilos Responsivos para Tablets e Dispositivos Médios */
+@media (max-width: 1024px) {
   .faq-container {
-    flex-direction: column; /* Altera o layout para coluna em telas menores */
-    align-items: center; /* Centraliza os itens no eixo cruzado */
+    padding-top: 100px;
+    gap: 30px; /* Reduz o espaçamento entre os itens */
   }
 
   .faq-image img {
-    width: 80%; /* Reduz a largura da imagem para 80% em dispositivos móveis */
-    margin-bottom: 20px; /* Adiciona espaçamento inferior entre a imagem e o conteúdo */
+    width: 60%; /* Reduz o tamanho da imagem em telas menores */
+    margin-left: 0; /* Centraliza a imagem em telas menores */
   }
 
   .faq-content {
-    width: 100%; /* Faz o conteúdo ocupar toda a largura disponível em telas pequenas */
-    margin-right: 0; /* Remove a margem à direita */
+    width: 100%; /* Faz o conteúdo ocupar toda a largura disponível */
+    text-align: center; /* Centraliza o texto em dispositivos menores */
   }
 
   .faq-content h2 {
-    font-size: 1.25rem; /* Diminui o tamanho da fonte do título em dispositivos móveis */
+    font-size: 1.75rem; /* Ajuste o tamanho da fonte */
+  }
+}
+
+/* Estilos Responsivos para Dispositivos Móveis (até 768px) */
+@media (max-width: 768px) {
+  .faq-container {
+    flex-direction: column; /* Muda para layout em coluna */
+    align-items: center;
+    padding-top: 50px;
+    gap: 20px;
+  }
+
+  .faq-image img {
+    width: 80%; /* Reduz a largura da imagem */
+    margin-bottom: 20px;
+  }
+
+  .faq-content {
+    width: 100%; /* Faz o conteúdo ocupar 100% da largura */
+  }
+
+  .faq-content h2 {
+    font-size: 1.5rem; /* Reduz o tamanho da fonte do título */
+  }
+}
+
+/* Estilos Responsivos para Smartphones (até 480px) */
+@media (max-width: 480px) {
+  .faq-container {
+    padding-top: 30px;
+    gap: 10px;
+  }
+
+  .faq-image img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do dispositivo */
+    margin-bottom: 15px;
+  }
+
+  .faq-content h2 {
+    font-size: 1.25rem; /* Reduz ainda mais o tamanho da fonte */
+  }
+
+  .faq-question {
+    font-size: 1rem; /* Reduz o tamanho da fonte das perguntas */
+  }
+
+  .faq-answer {
+    font-size: 0.9rem; /* Reduz o tamanho da fonte das respostas */
   }
 }
