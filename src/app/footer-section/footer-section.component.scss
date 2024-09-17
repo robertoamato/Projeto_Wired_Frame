@@ -1,253 +1,141 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-html, body {
-  height: 100%;
-}
-
+/* Estilos gerais */
 body {
   margin: 0;
-  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-/* Seção de contato principal */
+/* Seção de contato */
 .contact-section {
-  padding: 140px;
-  background-color: #f9f9f9;
-  text-align: center;
+  padding: 20px;
 }
 
-/* Banner informativo */
 .info-banner {
-  background-color: #333;
-  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
   padding: 20px;
   border-radius: 8px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto 20px;
-  max-width: 1400px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: -200px;
-  margin-left: 50px;
+  text-align: center;
 }
 
 .info-text h2 {
-  margin: 0;
-  font-size: 34px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  line-height: 48px;
-  text-transform: uppercase;
-  text-align: left;
+  margin: 0 0 10px;
+  font-size: 24px;
 }
 
 .info-text p {
-  margin: 15px 0 0;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 25px;
-  line-height: 27px;
-  text-align: center;
+  margin: 0 0 20px;
+  font-size: 16px;
 }
 
 .contact-button {
-  background-color: #fff;
-  color: #333;
-  padding: 18px 8px;
-  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  height: 70px;
-  width: 300px;
-  font-size: 20px;
-  font-weight: 600;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .contact-button:hover {
-  background-color: #eee;
-  transform: scale(1.05);
+  background-color: #0056b3;
 }
 
-/* Conteúdo do rodapé */
+/* Rodapé */
 .footer-content {
   display: flex;
-  justify-content: space-between;
-  padding: 20px 0;
   flex-wrap: wrap;
-  max-width: 1300px;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
 }
 
 .footer-column {
   flex: 1;
-  margin: 0 10px;
-  color: #555;
   min-width: 150px;
+  margin: 10px;
+}
+
+.footer-logo {
+  max-width: 100%;
+  height: auto;
 }
 
 .footer-column h3 {
-  font-size: 20px;
-  font-family: 'Poppins', sans-serif;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  margin-left: -50px;
+  margin: 0 0 10px;
+  font-size: 18px;
 }
 
 .footer-column a {
-  color: #555;
-  text-decoration: none;
-  margin-bottom: 5px;
   display: block;
-  font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
-  transition: color 0.3s ease;
-  margin-left: -50px;
+  color: #fff;
+  text-decoration: none;
+  margin: 5px 0;
 }
 
 .footer-column a:hover {
-  color: #333;
+  text-decoration: underline;
 }
 
-.footer-column p {
-  margin: 0;
-  max-width: 250px;
-  margin-left: 10px;
-}
-
-/* Seção de ícones sociais */
 .connect .social-icons {
   display: flex;
-  gap: 15px;
-  margin-left: 20px;
+  gap: 10px;
 }
 
 .social-icons .icon {
   width: 30px;
   height: 30px;
-  background-color: #ccc;
+  background-color: #555;
   border-radius: 50%;
-  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.social-icons .icon:hover {
-  background-color: #999;
-  transform: scale(1.1);
-}
-
-.footer-logo {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 20px;
-  transition: transform 0.3s ease;
-  margin-left: -10px;
-}
-
-.footer-logo:hover {
-  transform: rotate(360deg);
-}
-
-/* Breakpoints mais utilizados */
-
-/* Mobile */
-@media (max-width: 480px) {
-  .contact-section {
-    padding: 80px;
-  }
-
-  .info-banner {
+/* Responsividade */
+@media (max-width: 768px) {
+  .footer-content {
     flex-direction: column;
-    margin-left: 0;
+    align-items: center;
   }
 
-  .info-text h2 {
-    font-size: 24px;
+  .footer-column {
+    width: 100%;
     text-align: center;
   }
 
   .contact-button {
     width: 100%;
+    padding: 15px;
+    font-size: 18px;
   }
 }
 
-/* Extra small devices */
-@media (min-width: 481px) and (max-width: 767px) {
-  .contact-section {
-    padding: 100px;
-  }
-
-  .info-banner {
-    flex-direction: column;
-    margin-left: 0;
-  }
-
+@media (max-width: 480px) {
   .info-text h2 {
-    font-size: 28px;
-    text-align: center;
+    font-size: 20px;
+  }
+
+  .info-text p {
+    font-size: 14px;
   }
 
   .contact-button {
-    width: 80%;
-  }
-}
-
-/* Small tablets */
-@media (min-width: 768px) and (max-width: 991px) {
-  .contact-section {
-    padding: 120px;
+    padding: 12px;
+    font-size: 16px;
   }
 
-  .info-text h2 {
-    font-size: 30px;
-    text-align: left;
+  .footer-column h3 {
+    font-size: 16px;
   }
 
-  .contact-button {
-    width: 60%;
-  }
-}
-
-/* Large tablets/laptops */
-@media (min-width: 992px) and (max-width: 1199px) {
-  .contact-section {
-    padding: 140px;
+  .footer-column a {
+    font-size: 14px;
   }
 
-  .info-text h2 {
-    font-size: 32px;
-  }
-
-  .contact-button {
-    width: 50%;
-  }
-}
-
-/* EDesktops */
-@media (min-width: 1200px) and (max-width: 1919px) {
-  .contact-section {
-    padding: 140px;
-  }
-
-  .info-text h2 {
-    font-size: 34px;
-  }
-
-  .contact-button {
-    width: 300px;
-  }
-}
-
-/* Extra large screens */
-@media (min-width: 1920px) {
-  .contact-section {
-    padding: 160px;
-  }
-
-  .info-text h2 {
-    font-size: 36px;
-  }
-
-  .contact-button {
-    width: 400px;
+  .social-icons .icon {
+    width: 25px;
+    height: 25px;
   }
 }

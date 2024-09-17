@@ -1,30 +1,34 @@
+/* Container principal */
 .container {
   text-align: center;
-  max-width: 1000px;
+  max-width: 1000px; /* Limita a largura máxima do container */
   margin: 0 auto;
   padding: 40px 20px;
   font-family: Arial, sans-serif;
   background-color: #fff;
 }
 
+/* Título principal */
 .container h1 {
-  font-family: 'Poppins';
-  font-size: 2.5em;
-  font-weight: 600;
+  font-family: 'Poppins', sans-serif; /* Fonte Poppins para o título */
+  font-size: 2.5em; /* Tamanho da fonte do título */
+  font-weight: 600; /* Peso da fonte semibold */
   margin-bottom: 40px;
   margin-top: 60px;
 }
 
+/* Parágrafo */
 .container p {
-  font-family: 'Open Sans';
-  font-size: 1.5em;
-  line-height: 40.9px;
-  font-weight: 400;
+  font-family: 'Open Sans', sans-serif; /* Fonte Open Sans para o parágrafo */
+  font-size: 1.5em; /* Tamanho da fonte do parágrafo */
+  line-height: 1.6; /* Ajusta a altura da linha */
+  font-weight: 400; /* Peso da fonte normal */
   margin-bottom: 50px;
-  margin-top: 0px;
+  margin-top: 0;
   width: auto;
 }
 
+/* Conteúdo flexível */
 .content {
   display: flex;
   justify-content: space-between;
@@ -33,6 +37,7 @@
   flex-wrap: wrap; /* Permite que os itens se ajustem em telas menores */
 }
 
+/* Imagens */
 .images {
   display: flex;
   flex-wrap: wrap;
@@ -40,6 +45,7 @@
   justify-content: center;
 }
 
+/* Estilos individuais das imagens */
 .image {
   background-color: #ccc;
   border: 1px solid #999;
@@ -61,6 +67,7 @@
   height: 100px;
 }
 
+/* Texto dos itens */
 .text-items {
   flex: 1;
   text-align: left;
@@ -69,21 +76,21 @@
 .text-item {
   display: flex;
   align-items: center;
-  margin-bottom: -25px;
+  margin-bottom: 15px; /* Ajusta o espaçamento entre os itens de texto */
 }
 
 .check {
   color: green;
   margin-right: 10px;
   font-size: 1.6em;
-  margin-top: -90px;
 }
 
+/* Botão hover */
 .button:hover {
   background-color: #333;
 }
 
-/* Estilo Responsivo */
+/* Responsividade para telas menores que 768px */
 @media (max-width: 768px) {
   .content {
     flex-direction: column;
@@ -91,8 +98,44 @@
   }
 
   .text-items {
-    text-align: center; /* Centraliza o texto no modo responsivo */
+    text-align: center; /* Centraliza o texto em telas menores */
   }
 
-  
+  .images {
+    flex-direction: column; /* Coloca as imagens em coluna em telas menores */
+    gap: 5px; /* Ajusta o espaçamento entre as imagens */
+  }
+
+  .image {
+    width: 100%; /* Faz com que as imagens ocupem toda a largura disponível */
+    max-width: 300px; /* Define uma largura máxima para as imagens */
+  }
+
+  .large, .medium, .small {
+    width: 100%; /* Ajusta a largura das imagens */
+    height: auto; /* Ajusta a altura para manter a proporção */
+  }
+}
+
+/* Responsividade para telas muito pequenas (até 480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 10px; /* Reduz o padding para telas muito pequenas */
+  }
+
+  .container h1 {
+    font-size: 1.8em; /* Ajusta o tamanho da fonte do título para telas muito pequenas */
+  }
+
+  .container p {
+    font-size: 1.2em; /* Ajusta o tamanho da fonte do parágrafo */
+  }
+
+  .text-item {
+    margin-bottom: 10px; /* Reduz o espaçamento entre os itens de texto */
+  }
+
+  .check {
+    font-size: 1.4em; /* Ajusta o tamanho do ícone */
+  }
 }

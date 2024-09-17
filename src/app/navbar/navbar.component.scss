@@ -1,95 +1,148 @@
+/* Estilos gerais da barra de navegação */
 .navbar {
-  display: flex; /* Define layout flexível para alinha os itens */
-  align-items: center; /* Alinha verticalmente os itens ao centro */
-  justify-content: space-between; /* Distribui o conteúdo com espaço entre os itens */
-  padding: 10px 30px; /* Adiciona espaçamento interno na parte superior/inferior e laterais */
-  background-color: #ffffff; /* Cor de fundo da barra de navegação */
-  border-bottom: 1px solid #ddd; /* Adiciona uma linha sutil na parte inferior */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  position: relative; /* Necessário para posicionar o menu toggle em dispositivos móveis */
 }
 
 /* Logo da barra de navegação */
 .navbar-logo {
-  display: flex; /* Layout flexível para alinhar o logo */
-  align-items: center; /* Alinha verticalmente o logo */
+  display: flex;
+  align-items: center;
 }
 
 /* Estilo da imagem do logo */
 .navbar-logo img {
-  width: 50px; /* Largura fixa do logo, ajustável conforme necessário */
-  height: 50px; /* Altura fixa do logo, ajustável conforme necessário */
-  border-radius: 50%; /* Adiciona efeito de círculo ao logo */
-  margin-left: 100px; /* Espaçamento à esquerda do logo */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 /* Estilo da lista de links na navegação */
 .navbar-links {
-  list-style: none; /* Remove os marcadores de lista padrão */
-  display: flex; /* Exibe os links em linha */
-  margin: 0; /* Remove margens externas */
-  padding: 10px; /* Espaçamento interno */
-  flex-grow: 1; /* Faz a lista ocupar o espaço restante */
-  justify-content: right; /* Alinha os links à direita */
-  font-family: 'Open Sans', sans-serif; /* Define a fonte dos links */
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+  justify-content: flex-end;
+  font-family: 'Open Sans', sans-serif;
+  gap: 30px; /* Espaçamento horizontal entre os links */
 }
 
 /* Estilo de cada item da lista de links */
 .navbar-links li {
-  margin: 0 30px; /* Define espaçamento horizontal entre os links */
+  margin: 0;
 }
 
 /* Estilo dos links de navegação */
 .navbar-links a {
-  text-decoration: none; /* Remove sublinhado dos links */
-  color: #000; /* Define a cor do texto dos links */
-  font-weight: 600; /* Define a espessura da fonte */
-  font-size: 1.125px; /* Tamanho da fonte */
-  transition: color 0.3s ease; /* Transição suave da cor ao passar o mouse */
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 16px; /* Tamanho da fonte ajustado para melhor visualização em dispositivos móveis */
+  transition: color 0.3s ease;
 }
 
 /* Efeito hover nos links */
 .navbar-links a:hover {
-  color: #007BFF; /* Cor de destaque ao passar o mouse */
+  color: #007BFF;
 }
 
 /* Estilo do botão na barra de navegação */
 .navbar-button {
-  background-color: #000; /* Cor de fundo preta para o botão */
-  color: #fff; /* Cor do texto branca */
-  border: none; /* Remove borda padrão */
-  padding: 10px 50px; /* Espaçamento interno no botão */
-  cursor: pointer; /* Define o cursor como ponteiro ao passar sobre o botão */
-  font-size: 1em; /* Tamanho da fonte */
-  transition: background-color 0.3s ease; /* Transição suave da cor de fundo ao passar o mouse */
-  border-radius: 5px; /* Bordas arredondadas */
-  font-weight: 600; /* Espessura da fonte */
-  font-family: 'Inter', sans-serif; /* Fonte do botão */
-  margin-right: 39px; /* Espaçamento à direita do botão */
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px; /* Ajustado para melhor ajuste em telas menores */
+  cursor: pointer;
+  font-size: 16px; /* Tamanho da fonte ajustado para melhor visualização */
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
 }
 
 /* Efeito hover no botão */
 .navbar-button:hover {
-  background-color: #333; /* Cor de fundo mais escura ao passar o mouse */
+  background-color: #333;
+}
+
+/* Menu toggle para telas pequenas */
+.menu-toggle {
+  display: none; /* Oculta o botão de menu toggle por padrão */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Icone do menu toggle */
+.menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: #000;
+  margin: 3px 0;
 }
 
 /* Responsividade para telas menores que 768px */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column; /* Muda o layout para coluna em telas pequenas */
-    align-items: flex-start; /* Alinha os itens à esquerda */
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
   }
 
   .navbar-links {
-    flex-direction: column; /* Muda a direção dos links para coluna */
-    width: 100%; /* Os links ocupam 100% da largura */
-    margin-top: 10px; /* Adiciona espaçamento superior */
+    display: none; /* Oculta os links inicialmente em dispositivos móveis */
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    padding: 0;
+    background-color: #ffffff; /* Fundo branco para o menu dropdown */
+    position: absolute; /* Posiciona o menu dropdown */
+    top: 60px; /* Ajuste conforme necessário */
+    left: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Garante que o menu dropdown apareça sobre outros elementos */
+  }
+
+  .navbar-links.show {
+    display: flex; /* Mostra o menu quando o toggle está ativo */
   }
 
   .navbar-links li {
-    margin: 20px 0; /* Espaçamento vertical entre os itens da lista */
+    margin: 10px 0; /* Espaçamento vertical entre os itens da lista */
   }
 
   .navbar-button {
-    margin-top: 10px; /* Adiciona espaçamento superior ao botão */
-    width: 100%; /* Botão ocupa toda a largura disponível */
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .menu-toggle {
+    display: flex; /* Mostra o botão de menu toggle em dispositivos móveis */
+  }
+}
+
+/* Estilos para telas muito pequenas (até 480px) */
+@media (max-width: 480px) {
+  .navbar-logo img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .navbar-links a {
+    font-size: 14px; /* Ajusta o tamanho da fonte dos links */
+  }
+
+  .navbar-button {
+    font-size: 14px; /* Ajusta o tamanho da fonte do botão */
+    padding: 8px 16px; /* Ajusta o padding do botão */
   }
 }

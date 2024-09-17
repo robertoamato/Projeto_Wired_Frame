@@ -1,11 +1,11 @@
-.main-container{
-
+/* Container Principal */
+.main-container {
   background-color: #f8f8f8;
+  padding: 20px;
 }
 
-/* Container Principal */
+/* Container de Estratégia de Negócio */
 .business-strategy-container {
-  
   padding: 30px;
   border-radius: 10px;
   max-width: 1300px;
@@ -38,37 +38,23 @@
   justify-content: space-around;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap; /* Ajusta os itens para quebrar linha em telas menores */
 }
 
 /* Item Individual de Estatísticas */
 .stat-item {
   flex: 1;
   text-align: center;
+  min-width: 200px; /* Define um tamanho mínimo para cada item */
+  margin-bottom: 20px;
+  padding: 10px;
 }
 
 /* Estilos Individuais para cada Item de Estatística */
-.stat-clients {
-  
+.stat-clients, .stat-growth, .stat-projects, .stat-ratings {
   padding: 20px;
   border-radius: 8px;
-}
-
-.stat-growth {
-  
-  padding: 20px;
-  border-radius: 8px;
-}
-
-.stat-projects {
-  
-  padding: 20px;
-  border-radius: 8px;
-}
-
-.stat-ratings {
-  
-  padding: 20px;
-  border-radius: 8px;
+  background-color: #fff; /* Adiciona cor de fundo para melhorar visualização em telas pequenas */
 }
 
 /* Título de Cada Estatística */
@@ -92,9 +78,7 @@
 
 /* Divisores Entre os Itens de Estatística */
 .divider {
-  width: 2px;
-  height: 50px;
-  background-color: #ccc;
+  display: none; /* Esconde o divisor em telas pequenas */
 }
 
 /* Placeholder para Imagem */
@@ -103,4 +87,85 @@
   height: 500px;
   border-radius: 10px;
   margin-top: 40px;
+}
+
+/* Responsividade para telas menores que 1024px */
+@media (max-width: 1024px) {
+  .business-title {
+    font-size: 2.2em; /* Ajusta o tamanho do título */
+  }
+
+  .business-description {
+    font-size: 1.1em; /* Ajusta o tamanho da descrição */
+    margin-bottom: 50px;
+  }
+
+  .stat-item {
+    padding: 15px;
+  }
+
+  .stat-item h3 {
+    font-size: 1.4em; /* Reduz o tamanho do título das estatísticas */
+  }
+
+  .stat-item p {
+    font-size: 1.1em; /* Reduz o tamanho do valor das estatísticas */
+  }
+
+  .image-placeholder {
+    height: 400px; /* Reduz a altura da imagem em telas menores */
+  }
+}
+
+/* Responsividade para telas menores que 768px (tablets e celulares grandes) */
+@media (max-width: 768px) {
+  .business-title {
+    font-size: 1.8em; /* Reduz o tamanho do título */
+  }
+
+  .business-description {
+    font-size: 1em; /* Ajusta o tamanho da descrição */
+  }
+
+  .stats-container {
+    flex-direction: column; /* Coloca os itens de estatística em coluna */
+    gap: 30px; /* Aumenta o espaçamento entre os itens */
+  }
+
+  .stat-item {
+    width: 100%; /* Garante que os itens ocupem toda a largura disponível */
+  }
+
+  .image-placeholder {
+    height: 300px; /* Ajusta a altura da imagem */
+  }
+}
+
+/* Responsividade para telas menores que 480px (celulares pequenos) */
+@media (max-width: 480px) {
+  .business-title {
+    font-size: 1.5em; /* Tamanho do título menor para telas muito pequenas */
+    margin-bottom: 10px;
+  }
+
+  .business-description {
+    font-size: 0.9em; /* Descrição menor para telas pequenas */
+    margin-bottom: 40px;
+  }
+
+  .stat-item {
+    padding: 10px; /* Reduz o espaçamento interno dos itens de estatística */
+  }
+
+  .stat-item h3 {
+    font-size: 1.2em; /* Tamanho do título da estatística menor */
+  }
+
+  .stat-item p {
+    font-size: 1em; /* Tamanho do valor da estatística menor */
+  }
+
+  .image-placeholder {
+    height: 200px; /* Altura da imagem reduzida */
+  }
 }
