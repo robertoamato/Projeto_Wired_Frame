@@ -238,6 +238,10 @@
     width: 80%; /* Botão ocupa 80% da largura */
   }
 }
+.footer-column p {
+  font-size: 14px; /* Ajuste da fonte */
+  margin-left: 20px; /* Remove margens negativas */
+  text-align: center; /* Centraliza os parágrafos */}
 
 /* Small tablets */
 @media (min-width: 768px) and (max-width: 991px) {

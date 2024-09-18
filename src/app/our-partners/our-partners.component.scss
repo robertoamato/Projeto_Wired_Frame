@@ -59,9 +59,10 @@
   }
 
   .partners-description {
-    font-size: 1em; /* Ajusta o tamanho da fonte do parágrafo */
+    font-size: 1.2em; /* Ajusta o tamanho da fonte do parágrafo */
     max-width: 100%; /* Limita a largura do parágrafo a 100% da largura da tela */
     margin-top: 20px; /* Ajusta o espaçamento superior para telas muito pequenas */
     margin-bottom: 40px; /* Ajusta o espaçamento inferior para telas muito pequenas */
+    text-align: left;
   }
 }

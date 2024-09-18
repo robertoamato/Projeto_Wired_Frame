@@ -1,134 +1,61 @@
-.faq-container {
-  display: flex; /* Define um layout flexível */
-  justify-content: space-between; /* Espaçamento entre os elementos */
-  align-items: flex-start; /* Alinha os itens no topo */
-  padding-top: 120px; /* Espaçamento no topo */
-  gap: 50px; /* Espaçamento entre os itens */
-  max-width: 1400px; /* Define a largura máxima do contêiner */
-  margin: 0 auto; /* Centraliza o contêiner horizontalmente */
-  flex-wrap: wrap; /* Permite que o conteúdo quebre linha em telas menores */
-}
-
-.faq-image img {
-  max-width: 100%; /* A imagem ocupa no máximo 100% do seu contêiner */
-  height: auto; /* A altura ajusta-se automaticamente para manter a proporção */
-  width: 700px; /* Largura fixa da imagem em telas maiores */
-  margin-bottom: 50px; /* Espaçamento inferior da imagem */
-  margin-left: -50px; /* Deslocamento à esquerda */
-}
-
-.faq-content {
-  width: 50%; /* Define o conteúdo FAQ para ocupar 50% da largura */
-  margin-right: 0; /* Remove a margem à direita */
-}
-
-.faq-content h2 {
-  font-family: 'Poppins', sans-serif; /* Define a fonte do título */
-  font-size: 2rem; /* Tamanho da fonte maior */
-  margin-bottom: 20px; /* Espaçamento inferior */
-  font-weight: 600; /* Espessura da fonte */
-  line-height: 1.5; /* Espaçamento entre linhas */
-}
-
-.faq-item {
-  border: 1px solid #e0e0e0; /* Borda leve ao redor dos itens */
-  border-radius: 8px; /* Bordas arredondadas */
-  margin-bottom: 15px; /* Espaçamento entre os itens */
-  padding: 15px; /* Espaçamento interno */
-  background-color: #f9f9f9; /* Cor de fundo dos itens */
-  transition: background-color 0.3s ease; /* Efeito de transição na cor de fundo */
-}
-
-.faq-item:hover {
-  background-color: #f0f0f0; /* Muda a cor de fundo ao passar o mouse */
-}
-
-.faq-question {
-  display: flex; /* Layout flexível */
-  justify-content: space-between; /* Espaçamento entre a pergunta e o ícone */
-  align-items: center; /* Alinha verticalmente ao centro */
-  cursor: pointer; /* Mostra que o item é clicável */
-  font-family: 'Poppins', sans-serif; /* Fonte da pergunta */
-  font-size: 1.2rem; /* Tamanho da fonte */
-  font-weight: 500; /* Espessura da fonte */
-  line-height: 1.5; /* Espaçamento entre linhas */
-}
-
-.faq-answer {
-  font-family: 'Open Sans', sans-serif; /* Fonte das respostas */
-  font-size: 1rem; /* Tamanho da fonte */
-  font-weight: 400; /* Espessura da fonte */
-  line-height: 1.6; /* Espaçamento entre linhas */
-  margin-top: 10px; /* Espaçamento superior */
-  color: #666; /* Cor do texto */
-}
-
-/* Estilos Responsivos para Tablets e Dispositivos Médios (até 1024px) */
-@media (max-width: 1024px) {
-  .faq-container {
-    padding-top: 100px; /* Reduz o espaçamento superior */
-    gap: 30px; /* Reduz o espaçamento entre os itens */
-  }
-
-  .faq-image img {
-    width: 50%; /* Reduz a largura da imagem */
-    margin-left: 0; /* Remove o deslocamento lateral da imagem */
-  }
-
-  .faq-content {
-    width: 100%; /* Faz o conteúdo ocupar toda a largura disponível */
-    text-align: center; /* Centraliza o texto */
-  }
-
-  .faq-content h2 {
-    font-size: 1.75rem; /* Reduz o tamanho da fonte */
-  }
-}
-
-/* Estilos Responsivos para Dispositivos Móveis (até 768px) */
-@media (max-width: 768px) {
-  .faq-container {
-    flex-direction: column; /* Muda o layout para coluna */
-    align-items: center; /* Centraliza os itens */
-    padding-top: 50px; /* Reduz o espaçamento superior */
-    gap: 20px; /* Reduz o espaçamento entre os itens */
-  }
-
-  .faq-image img {
-    width: 80%; /* Reduz ainda mais a largura da imagem */
-    margin-bottom: 20px; /* Reduz o espaçamento inferior */
-  }
-
-  .faq-content {
-    width: 100%; /* Faz o conteúdo ocupar toda a largura */
-  }
-
-  .faq-content h2 {
-    font-size: 1.5rem; /* Reduz ainda mais o tamanho da fonte */
-  }
-}
-
-/* Estilos Responsivos para Smartphones (até 480px) */
 @media (max-width: 480px) {
   .faq-container {
-    padding-top: 30px; /* Reduz o espaçamento superior */
-    gap: 10px; /* Reduz o espaçamento entre os itens */
+    padding: 20px; /* Reduz o espaçamento geral */
+    display: flex;
+    flex-direction: column; /* Garante que os itens fiquem em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    gap: 10px; /* Espaçamento entre os itens */
   }
 
   .faq-image img {
-    width: 100%; /* Faz a imagem ocupar toda a largura da tela */
-    margin-bottom: 15px; /* Reduz o espaçamento inferior */
+    width: 100%; /* Imagem ocupa toda a largura disponível */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 15px; /* Espaçamento inferior para a imagem */
+    display: block; /* Garante que a imagem seja exibida como um bloco */
   }
 
   .faq-content h2 {
-    font-size: 1.25rem; /* Reduz o tamanho da fonte para telas pequenas */
+    font-size: 1.25rem; /* Tamanho de fonte ajustado para telas pequenas */
+    text-align: center; /* Centraliza o título */
   }
 
   .faq-question {
-    font-size: 1rem; /* Reduz o tamanho da fonte das perguntas */
+    font-size: 1rem; /* Tamanho de fonte para perguntas */
+    text-align: center; /* Centraliza o texto das perguntas */
   }
 
   .faq-answer {
-    font-size: 0.9rem; /* Reduz o tamanho da fonte das respostas */
+    font-size: 0.9rem; /* Tamanho de fonte para respostas */
+    text-align: justify; /* Alinha o texto das respostas de forma justificada */
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .faq-container {
+    padding: 30px; /* Aumenta um pouco o padding para telas maiores */
+    display: flex;
+    flex-direction: column; /* Mantém a estrutura em coluna */
+    align-items: center; /* Centraliza os itens no container */
+    gap: 15px; /* Aumenta o espaçamento entre os itens */
+  }
+
+  .faq-image img {
+    width: 80%; /* Imagem ocupa 80% da largura para deixar espaço nas laterais */
+    height: auto; /* Mantém a proporção correta da imagem */
+    margin-bottom: 20px; /* Espaçamento inferior ajustado */
+  }
+
+  .faq-content h2 {
+    font-size: 1.5rem; /* Tamanho da fonte ajustado para telas maiores */
+    text-align: center; /* Centraliza o título */
+  }
+
+  .faq-question {
+    font-size: 1.1rem; /* Aumenta um pouco o tamanho da fonte das perguntas */
+    text-align: center; /* Centraliza o texto das perguntas */
+  }
+
+  .faq-answer {
+    font-size: 1rem; /* Ajuste leve no tamanho da fonte das respostas */
+    text-align: justify; /* Mantém o texto justificado */
   }
 }
