@@ -1,7 +1,7 @@
 /* Container principal */
 .container {
   text-align: center;
-  max-width: 1000px; /* Limita a largura máxima do container */
+  max-width: 1300px; /* Limita a largura máxima do container */
   margin: 0 auto;
   padding: 40px 20px;
   font-family: Arial, sans-serif;
@@ -10,17 +10,18 @@
 
 /* Título principal */
 .container h1 {
-  font-family: 'Poppins', sans-serif; /* Fonte Poppins para o título */
-  font-size: 2.5em; /* Tamanho da fonte do título */
+  font-family: 'Poppins'; /* Fonte Poppins para o título */
+  font-size: 2.1em; /* Tamanho da fonte do título */
   font-weight: 600; /* Peso da fonte semibold */
   margin-bottom: 40px;
   margin-top: 60px;
+  ; 
 }
 
 /* Parágrafo */
 .container p {
   font-family: 'Open Sans', sans-serif; /* Fonte Open Sans para o parágrafo */
-  font-size: 1.5em; /* Tamanho da fonte do parágrafo */
+  font-size: 1.1em; /* Tamanho da fonte do parágrafo */
   line-height: 1.6; /* Ajusta a altura da linha */
   font-weight: 400; /* Peso da fonte normal */
   margin-bottom: 50px;
@@ -82,7 +83,8 @@
 .check {
   color: green;
   margin-right: 10px;
-  font-size: 1.6em;
+  font-size: 1.1em;
+  margin-top: -60px;
 }
 
 /* Botão hover */
