@@ -63,14 +63,19 @@
 
 /* Estilo responsivo para telas menores que 768px (dispositivos móveis) */
 @media (max-width: 768px) {
+  /* Container de texto */
   .text-container {
-    padding: 30px; /* Reduz ainda mais o espaçamento interno */
-    font-size: 0.9em; /* Diminui o tamanho da fonte em dispositivos móveis */
+    padding: 20px; /* Ajuste no padding para se adequar a telas menores */
+    font-size: 1em; /* Mantém um tamanho de fonte legível, não reduzido demais */
+    text-align: center; /* Centraliza o texto em dispositivos móveis */
   }
 
+  /* Container de imagem */
   .image-container img {
-    width: 100%; /* A imagem ocupa toda a largura disponível no container */
-    height: auto; /* Mantém a proporção correta */
+    width: 100%; /* A imagem agora ocupa 100% da largura do container */
+    height: auto; /* Mantém a proporção correta da imagem */
+    margin: 0 auto; /* Remove margens negativas e centraliza a imagem */
+    display: block; /* Garante que a imagem seja exibida como um bloco */
   }
 }
 

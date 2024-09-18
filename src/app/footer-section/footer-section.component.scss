@@ -141,21 +141,85 @@
 /* Breakpoints para diferentes tamanhos de tela */
 /* Mobile */
 @media (max-width: 480px) {
+  /* Seção de contato */
   .contact-section {
-    padding: 80px; /* Reduz o padding para telas menores */
+    padding: 40px 20px; /* Reduz o padding para telas menores */
+    text-align: center; /* Centraliza o conteúdo */
   }
+
+  /* Banner de informações */
   .info-banner {
     flex-direction: column; /* Alinha o conteúdo verticalmente */
-    margin-left: 0; /* Remove margem lateral */
+    align-items: center; /* Centraliza o conteúdo dentro do banner */
+    margin: 0 auto; /* Remove a margem lateral */
+    padding: 20px; /* Padding interno ajustado */
   }
+
   .info-text h2 {
-    font-size: 24px; /* Reduz o tamanho da fonte */
+    font-size: 20px; /* Reduz o tamanho da fonte */
     text-align: center; /* Centraliza o texto */
+    margin-bottom: 10px; /* Espaço inferior para separação */
   }
+
+  .info-text p {
+    font-size: 16px; /* Ajuste do tamanho da fonte */
+    line-height: 1.4; /* Melhor legibilidade */
+    margin: 0 0 20px 0; /* Espaço inferior para o botão */
+  }
+
   .contact-button {
-    width: 100%; /* Botão ocupa toda a largura */
+    width: 80%; /* Ajuste para ocupar a maior parte da largura */
+    padding: 15px; /* Padding confortável */
+    font-size: 18px; /* Tamanho da fonte adequado */
+    max-width: 300px; /* Largura máxima do botão */
+    margin: 0 auto; /* Centraliza o botão */
+  }
+
+  /* Conteúdo do rodapé */
+  .footer-content {
+    flex-direction: column; /* Coloca as colunas em bloco verticalmente */
+    align-items: center; /* Centraliza as colunas */
+    padding: 20px; /* Padding ajustado */
+  }
+
+  .footer-column {
+    width: 100%; /* Faz cada coluna ocupar 100% da largura */
+    margin-bottom: 20px; /* Espaço inferior entre colunas */
+    text-align: center; /* Centraliza o texto dentro das colunas */
+  }
+
+  .footer-column h3 {
+    font-size: 16px; /* Ajuste do tamanho da fonte do título */
+    margin-left: 0; /* Remove margens negativas */
+  }
+
+  .footer-column a {
+    font-size: 14px; /* Ajuste do tamanho da fonte dos links */
+    margin-left: 0; /* Remove margens negativas */
+  }
+
+  .footer-column p {
+    font-size: 14px; /* Ajuste da fonte */
+    margin-left: 0; /* Remove margens negativas */
+    text-align: center; /* Centraliza os parágrafos */
+  }
+
+  /* Ícones sociais */
+  .connect .social-icons {
+    justify-content: center; /* Centraliza os ícones sociais */
+    margin-left: 0; /* Remove margens desnecessárias */
+  }
+
+  .social-icons .icon {
+    width: 30px; /* Largura dos ícones */
+    height: 30px; /* Altura dos ícones */
+  }
+
+  .footer-logo {
+    margin-left: 0; /* Remove margens negativas */
   }
 }
+
 
 /* Extra small devices */
 @media (min-width: 481px) and (max-width: 767px) {
