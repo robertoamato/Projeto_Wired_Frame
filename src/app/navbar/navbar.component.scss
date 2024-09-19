@@ -85,30 +85,40 @@
 /* Responsividade para telas menores que 768px */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: column; /* Alinha a navbar em coluna */
+    align-items: center; /* Centraliza todos os itens da navbar */
+    padding: 20px 0; /* Adiciona espaçamento para melhorar o layout */
   }
 
   .navbar-logo img {
-    margin-left: 0;
+    margin: 0 auto; /* Centraliza a logo */
+    display: block; /* Garante que a logo se comporte como um bloco */
   }
 
   .navbar-links {
-    flex-direction: column;
-    width: 100%;
-    margin-top: 10px;
-    align-items: flex-start; /* Links alinhados à esquerda em telas pequenas */
+    flex-direction: column; /* Alinha os links em coluna */
+    width: 100%; /* Os links ocupam a largura total */
+    margin-top: 10px; /* Espaçamento acima dos links */
+    align-items: center; /* Centraliza os links */
   }
 
   .navbar-links li {
-    margin: 10px 0; /* Espaçamento vertical entre os itens da lista */
+    margin: 10px 0; /* Espaçamento vertical entre os links */
+    text-align: center; /* Centraliza o texto dos links */
   }
 
   .navbar-button {
-    margin-top: 10px;
-    width: 100%; /* Botão ocupa toda a largura disponível */
+    margin-top: 10px; /* Espaçamento acima do botão */
+    width: 50%; /* Reduz a largura do botão */
+    max-width: 200px; /* Define uma largura máxima para o botão */
+    padding: 10px; /* Ajusta o padding do botão para um tamanho confortável */
+    font-size: 0.9rem; /* Reduz o tamanho da fonte do botão */
+    text-align: center; /* Centraliza o texto do botão */
+    margin-left: auto;
+    margin-right: auto; /* Centraliza o botão horizontalmente */
   }
 }
+
 
 /* Responsividade para telas menores que 480px */
 @media (max-width: 480px) {

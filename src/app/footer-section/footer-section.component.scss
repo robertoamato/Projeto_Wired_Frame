@@ -169,7 +169,7 @@
 
   .contact-button {
     width: 80%; /* Ajuste para ocupar a maior parte da largura */
-    padding: 15px; /* Padding confortável */
+    padding: 10px; /* Padding confortável */
     font-size: 18px; /* Tamanho da fonte adequado */
     max-width: 300px; /* Largura máxima do botão */
     margin: 0 auto; /* Centraliza o botão */
@@ -222,76 +222,106 @@
 
 
 /* Extra small devices */
+/* Small devices (481px - 767px) */
 @media (min-width: 481px) and (max-width: 767px) {
   .contact-section {
-    padding: 100px; /* Padding ajustado para pequenos dispositivos */
+    padding: 60px 20px; /* Padding reduzido para telas menores */
+    text-align: center; /* Centraliza o conteúdo */
   }
+
   .info-banner {
     flex-direction: column; /* Alinha o conteúdo verticalmente */
-    margin-left: 0; /* Remove margem lateral */
+    align-items: center; /* Centraliza os itens */
   }
+
   .info-text h2 {
-    font-size: 28px; /* Ajusta o tamanho da fonte */
+    font-size: 26px; /* Tamanho ajustado da fonte para melhor legibilidade */
     text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Espaçamento inferior */
   }
+
   .contact-button {
-    width: 80%; /* Botão ocupa 80% da largura */
+    width: 70%; /* Botão ocupa 70% da largura da tela */
+    margin: 0 auto; /* Centraliza o botão */
+    padding: 12px 0; /* Aumenta o padding para torná-lo mais confortável */
+    font-size: 16px; /* Tamanho da fonte no botão ajustado */
   }
 }
-.footer-column p {
-  font-size: 14px; /* Ajuste da fonte */
-  margin-left: 20px; /* Remove margens negativas */
-  text-align: center; /* Centraliza os parágrafos */}
 
-/* Small tablets */
+.footer-column p {
+  font-size: 16px; /* Ajusta a fonte para uma leitura mais confortável */
+  margin-left: 0; /* Remove margens indesejadas */
+  text-align: center; /* Centraliza os parágrafos */
+}
+
+/* Small tablets (768px - 991px) */
 @media (min-width: 768px) and (max-width: 991px) {
   .contact-section {
-    padding: 120px; /* Ajuste do padding */
+    padding: 80px 40px; /* Ajuste de padding */
+    text-align: center;
   }
+
   .info-text h2 {
-    font-size: 30px; /* Tamanho da fonte ajustado */
-    text-align: left; /* Alinha o texto à esquerda */
+    font-size: 28px; /* Tamanho da fonte ajustado para tablets */
+    margin-bottom: 25px;
   }
+
   .contact-button {
     width: 60%; /* Botão ocupa 60% da largura */
+    margin: 0 auto; /* Centraliza o botão */
+    padding: 14px; /* Aumenta o padding para melhor usabilidade */
+    font-size: 18px; /* Tamanho da fonte no botão */
   }
 }
 
-/* Large tablets/laptops */
+/* Large tablets/laptops (992px - 1199px) */
 @media (min-width: 992px) and (max-width: 1199px) {
   .contact-section {
-    padding: 140px; /* Ajuste do padding */
+    padding: 100px 50px;
   }
+
   .info-text h2 {
-    font-size: 32px; /* Tamanho da fonte maior */
+    font-size: 30px; /* Fonte ajustada */
   }
+
   .contact-button {
     width: 50%; /* Botão ocupa 50% da largura */
+    padding: 16px; /* Padding mais confortável */
+    font-size: 18px; /* Tamanho da fonte do botão */
   }
 }
 
-/* Desktops */
+/* Desktops (1200px - 1919px) */
 @media (min-width: 1200px) and (max-width: 1919px) {
   .contact-section {
-    padding: 140px; /* Padding maior */
+    padding: 120px 60px;
   }
+
   .info-text h2 {
-    font-size: 34px; /* Fonte maior para desktops */
+    font-size: 32px; /* Fonte maior para desktops */
   }
+
   .contact-button {
-    width: 300px; /* Largura fixa do botão */
+    width: 40%; /* Botão ocupa 40% da largura */
+    padding: 18px;
+    font-size: 20px; /* Tamanho do botão aumentado */
   }
 }
 
-/* Extra large screens */
+/* Extra large screens (1920px+) */
 @media (min-width: 1920px) {
   .contact-section {
-    padding: 160px; /* Maior padding para telas grandes */
+    padding: 140px 80px;
   }
+
   .info-text h2 {
-    font-size: 36px; /* Fonte maior para telas maiores */
+    font-size: 36px; /* Fonte maior para telas grandes */
   }
+
   .contact-button {
-    width: 400px; /* Botão mais largo */
+    width: 400px; /* Largura fixa para o botão */
+    padding: 20px;
+    font-size: 22px;
   }
 }
+

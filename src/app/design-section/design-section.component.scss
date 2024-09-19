@@ -87,23 +87,24 @@
   color: #000; /* Cor preta para o texto */
   margin-bottom: 20px; /* Espaçamento abaixo do título */
   line-height: 1.2; /* Altura da linha ajustada para melhor legibilidade */
-  text-align: left; /* Alinha o título à esquerda */
+  text-align: center; /* Alinha o título à esquerda */
   word-wrap: break-word; /* Quebra palavras longas em várias linhas se necessário */
 }
 
 /* Estilo para o parágrafo no container de texto */
 .text-container p {
   font-family: 'Open Sans', sans-serif; /* Fonte Open Sans para o parágrafo */
-  font-size: 1.2em; /* Tamanho de fonte adequado para parágrafos */
+  font-size: 1.3em; /* Tamanho de fonte adequado para parágrafos */
   font-weight: 400; /* Peso regular da fonte */
   line-height: 1.6; /* Altura da linha para melhor legibilidade */
   color: #555; /* Cor de texto cinza suave */
   margin-bottom: 30px; /* Espaçamento abaixo do parágrafo */
-  text-align: left; /* Texto alinhado à esquerda */
+  text-align: center; /* Texto alinhado à esquerda */
   display: block; /* Garante que o parágrafo seja exibido como um bloco */
   max-width: 100%; /* Limita a largura máxima para não ultrapassar o container */
   word-spacing: 0.05em; /* Aumenta o espaçamento entre as palavras para melhorar a legibilidade */
   margin-bottom: 50px;
+  
 }
 
 /* Estilo para o botão de design */

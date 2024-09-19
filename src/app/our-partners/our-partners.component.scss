@@ -31,38 +31,41 @@
 /* Responsividade para telas menores que 768px */
 @media (max-width: 768px) {
   .partners-section {
-    padding: 30px 15px; /* Ajusta o espaçamento interno para telas menores */
+    padding: 30px 15px; /* Espaçamento interno ajustado para telas menores */
+    text-align: center; /* Centraliza o conteúdo da seção */
   }
 
   .partners-section h2 {
-    font-size: 2em; /* Ajusta o tamanho da fonte do título para telas menores */
-    line-height: 1.3; /* Ajusta a altura da linha do título */
+    font-size: 2.2em; /* Aumenta o tamanho do título para melhor legibilidade */
+    line-height: 1.4; /* Aumenta a altura da linha para melhorar a leitura */
+    margin-bottom: 20px; /* Adiciona espaçamento inferior para separação do conteúdo */
   }
 
   .partners-description {
-    font-size: 1.2em; /* Ajusta o tamanho da fonte do parágrafo */
-    max-width: 90%; /* Limita a largura do parágrafo a 90% da largura da tela */
-    margin-top: 30px; /* Ajusta o espaçamento superior para telas menores */
-    margin-bottom: 60px; /* Ajusta o espaçamento inferior para telas menores */
+    font-size: 1.4em; /* Aumenta o tamanho do parágrafo para facilitar a leitura */
+    max-width: 90%; /* Limita a largura para manter uma boa formatação */
+    margin: 30px auto 60px; /* Centraliza o parágrafo e ajusta o espaçamento */
+    line-height: 1.6; /* Aumenta o espaçamento entre linhas para maior clareza */
   }
 }
 
 /* Responsividade para telas muito pequenas (até 480px) */
 @media (max-width: 480px) {
   .partners-section {
-    padding: 20px 10px; /* Ajusta o espaçamento interno para telas muito pequenas */
+    padding: 20px 10px; /* Espaçamento interno ajustado para telas muito pequenas */
   }
 
   .partners-section h2 {
-    font-size: 1.75em; /* Ajusta o tamanho da fonte do título para telas muito pequenas */
-    line-height: 1.4; /* Ajusta a altura da linha do título */
+    font-size: 1.8em; /* Ajusta o tamanho do título para telas muito pequenas */
+    line-height: 1.5; /* Melhora a altura da linha para facilitar a leitura */
+    margin-bottom: 15px; /* Menor espaçamento inferior */
   }
 
   .partners-description {
-    font-size: 1.2em; /* Ajusta o tamanho da fonte do parágrafo */
-    max-width: 100%; /* Limita a largura do parágrafo a 100% da largura da tela */
-    margin-top: 20px; /* Ajusta o espaçamento superior para telas muito pequenas */
-    margin-bottom: 40px; /* Ajusta o espaçamento inferior para telas muito pequenas */
-    text-align: left;
+    font-size: 1.3em; /* Tamanho da fonte ajustado para melhor legibilidade */
+    max-width: 100%; /* O texto ocupa 100% da largura disponível */
+    margin: 20px auto 40px; /* Centraliza e ajusta o espaçamento do texto */
+    line-height: 1.5; /* Espaçamento entre linhas para melhor leitura */
+    text-align: center; /* Centraliza o texto para uma melhor apresentação */
   }
 }

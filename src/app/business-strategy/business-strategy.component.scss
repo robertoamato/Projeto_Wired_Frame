@@ -121,49 +121,66 @@
 /* Responsividade para telas menores que 768px (tablets e celulares grandes) */
 @media (max-width: 768px) {
   .business-title {
-    font-size: 1.8em; /* Reduz o tamanho do título */
+    font-size: 2em; /* Aumenta o tamanho do título para melhor legibilidade */
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 15px; /* Espaçamento inferior */
   }
 
   .business-description {
-    font-size: 1em; /* Ajusta o tamanho da descrição */
+    font-size: 1.2em; /* Aumenta a descrição para facilitar a leitura */
+    line-height: 1.6; /* Aumenta o espaçamento entre linhas */
+    text-align: center; /* Centraliza a descrição */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    padding: 0 15px; /* Espaço interno para evitar que o texto encoste nas bordas */
   }
 
   .stats-container {
+    display: flex;
     flex-direction: column; /* Coloca os itens de estatística em coluna */
-    gap: 30px; /* Aumenta o espaçamento entre os itens */
+    align-items: center; /* Centraliza os itens no container */
+    gap: 20px; /* Ajusta o espaçamento entre os itens */
+    padding: 0 10px; /* Adiciona espaçamento interno */
   }
 
   .stat-item {
-    width: 100%; /* Garante que os itens ocupem toda a largura disponível */
+    width: 90%; /* Garante que os itens ocupem quase toda a largura disponível */
+    padding: 15px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo */
+    background-color: #f0f0f0; /* Fundo leve */
+    border-radius: 8px; /* Bordas arredondadas */
   }
 
   .image-placeholder {
-    height: 300px; /* Ajusta a altura da imagem */
+    width: 100%; /* Imagem ocupa toda a largura disponível */
+    max-width: 400px; /* Limita a largura máxima */
+    height: auto; /* Ajusta a altura proporcionalmente */
+    margin: 20px auto; /* Centraliza a imagem e adiciona espaçamento */
+    display: block; /* Exibe a imagem como bloco */
   }
 }
 
 /* Responsividade para telas menores que 480px (celulares pequenos) */
 @media (max-width: 480px) {
   .business-title {
-    font-size: 1.5em; /* Tamanho do título menor para telas muito pequenas */
-    margin-bottom: 10px;
+    font-size: 1.8em; /* Tamanho do título reduzido */
+    margin-bottom: 30px;
   }
 
   .business-description {
-    font-size: 0.9em; /* Descrição menor para telas pequenas */
+    font-size: 1em; /* Tamanho da descrição ajustado */
     margin-bottom: 40px;
   }
 
   .stat-item {
-    padding: 10px; /* Reduz o espaçamento interno dos itens de estatística */
+    padding: 10px; /* Espaçamento interno reduzido */
   }
 
   .stat-item h3 {
-    font-size: 1.2em; /* Tamanho do título da estatística menor */
+    font-size: 1.2em; /* Tamanho do título da estatística reduzido */
   }
 
   .stat-item p {
-    font-size: 1em; /* Tamanho do valor da estatística menor */
+    font-size: 1em; /* Tamanho do texto da estatística ajustado */
   }
 
   .image-placeholder {

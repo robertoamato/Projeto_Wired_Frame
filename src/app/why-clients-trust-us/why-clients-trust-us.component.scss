@@ -95,29 +95,38 @@
 /* Responsividade para telas menores que 768px */
 @media (max-width: 768px) {
   .content {
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: center; /* Centraliza o conteúdo da seção */
+    padding: 20px; /* Adiciona espaçamento interno */
+    text-align: center; /* Garante que todo o conteúdo fique centralizado */
   }
 
   .text-items {
-    text-align: center; /* Centraliza o texto em telas menores */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Adiciona espaçamento inferior para separar do conteúdo de imagem */
   }
 
   .images {
-    flex-direction: column; /* Coloca as imagens em coluna em telas menores */
-    gap: 5px; /* Ajusta o espaçamento entre as imagens */
+    display: flex;
+    flex-direction: column; /* Alinha as imagens em coluna */
+    align-items: center; /* Centraliza as imagens */
+    gap: 15px; /* Aumenta o espaçamento entre as imagens para uma melhor visualização */
   }
 
   .image {
-    width: 100%; /* Faz com que as imagens ocupem toda a largura disponível */
-    max-width: 300px; /* Define uma largura máxima para as imagens */
+    width: 100%; /* As imagens ocupam toda a largura da tela */
+    max-width: 300px; /* Define uma largura máxima para imagens maiores */
+    margin: 0 auto; /* Centraliza as imagens */
   }
 
   .large, .medium, .small {
-    width: 100%; /* Ajusta a largura das imagens */
-    height: auto; /* Ajusta a altura para manter a proporção */
+    width: 100%; /* Garante que as imagens ocupem toda a largura do container */
+    height: auto; /* Mantém a proporção correta das imagens */
+    margin: 0 auto; /* Centraliza as imagens */
   }
 }
+
 
 /* Responsividade para telas muito pequenas (até 480px) */
 @media (max-width: 480px) {
