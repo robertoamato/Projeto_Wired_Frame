@@ -1,46 +1,44 @@
 /* Container principal da seção */
 .section-container {
-  display: flex; /* Usa flexbox para alinhar os elementos dentro do container */
-  align-items: center; /* Alinha os itens verticalmente ao centro */
-  justify-content: space-between; /* Distribui os itens com espaço entre eles */
-  width: 100%; /* O container ocupa 100% da largura disponível */
-  height: 600px; /* Altura fixa da seção (pode ser ajustada para responsividade) */
-  background-color: #f4f4f4; /* Cor de fundo clara */
-  padding: 0; /* Remove o padding (espaçamento interno) */
-  gap: 20px; /* Espaçamento de 20px entre a imagem e o texto */
-  box-sizing: border-box; /* Inclui padding e borda no cálculo da largura total */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 600px; /* Usar min-height ao invés de height para flexibilidade */
+  background-color: #f4f4f4;
+  padding: 20px; /* Adiciona padding para espaçamento interno */
+  gap: 20px;
+  box-sizing: border-box;
 }
 
 /* Container para o texto */
 .text-container {
-  flex: 1; /* Faz o container de texto ocupar o espaço disponível proporcionalmente */
-  background-color: #f4f4f4; /* Mantém a mesma cor de fundo do container principal */
-  padding: 100px; /* Define um espaçamento interno para afastar o conteúdo das bordas */
-  border-radius: 8px; /* Bordas arredondadas para suavizar o layout */
-  text-align: left; /* Texto alinhado à esquerda */
-  margin-right: -200px; /* Espaço negativo à direita para ajustar o layout */
-  box-sizing: border-box; /* Garante que o padding e a borda sejam considerados na largura total */
+  flex: 1;
+  background-color: #f4f4f4;
+  padding: 50px; /* Reduzido para melhor responsividade */
+  border-radius: 8px;
+  text-align: center; /* Alinha o texto à esquerda */
+  margin: 0; /* Remove margin negativa */
+  box-sizing: border-box;
 }
 
 /* Container para a imagem */
 .image-container {
-  flex: 1; /* Ocupa o mesmo espaço que o texto */
-  display: flex; /* Flexbox para centralizar o conteúdo */
-  align-items: center; /* Alinha a imagem verticalmente ao centro */
-  justify-content: center; /* Centraliza a imagem horizontalmente */
-  padding: 10px; /* Adiciona um pequeno padding para espaçamento interno */
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
 
 /* Estilo para a imagem dentro do container */
 .image-container img {
-  max-width: 100%; /* A imagem ocupa no máximo 100% da largura do container */
-  height: auto; /* Mantém a proporção da imagem */
-  border-radius: px; /* Adiciona bordas arredondadas à imagem */
-  object-fit: cover; /* Faz a imagem cobrir todo o container sem distorção */
-  width: 900px; /* Define uma largura fixa para a imagem */
-  height: 600px; /* Define uma altura fixa para a imagem */
-  margin-right: -50px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Adiciona bordas arredondadas */
+  object-fit: cover;
 }
+
 
 /* Estilo responsivo para telas menores que 1024px */
 @media (max-width: 1024px) {
