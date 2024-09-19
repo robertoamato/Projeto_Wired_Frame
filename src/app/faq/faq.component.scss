@@ -69,7 +69,7 @@
   .faq-image img {
     width: 100%; /* Imagem ocupa toda a largura disponível */
     height: auto; /* Mantém a proporção da imagem */
-    margin-bottom: 15px; /* Espaçamento inferior para a imagem */
+    margin: 0 auto 15px auto; /* Centraliza horizontalmente e ajusta o espaçamento inferior */
     display: block; /* Garante que a imagem seja exibida como um bloco */
   }
 
@@ -85,9 +85,10 @@
 
   .faq-answer {
     font-size: 0.9rem; /* Tamanho de fonte para respostas */
-    text-align: justify; /* Alinha o texto das respostas de forma justificada */
+    text-align: center; /* Alinha o texto das respostas no centro */
   }
 }
+
 @media (min-width: 481px) and (max-width: 768px) {
   .faq-container {
     padding: 30px; /* Aumenta um pouco o padding para telas maiores */
@@ -100,11 +101,12 @@
   .faq-image img {
     width: 80%; /* Imagem ocupa 80% da largura para deixar espaço nas laterais */
     height: auto; /* Mantém a proporção correta da imagem */
-    margin-bottom: 20px; /* Espaçamento inferior ajustado */
+    margin: 0 auto 20px auto; /* Centraliza horizontalmente e ajusta o espaçamento inferior */
+    display: block; /* Garante que a imagem seja exibida como um bloco */
   }
 
   .faq-content h2 {
-    font-size: 1.5rem; /* Tamanho da fonte ajustado para telas maiores */
+    font-size: 2.5rem; /* Tamanho da fonte ajustado para telas maiores */
     text-align: center; /* Centraliza o título */
   }
 
@@ -115,6 +117,6 @@
 
   .faq-answer {
     font-size: 1rem; /* Ajuste leve no tamanho da fonte das respostas */
-    text-align: justify; /* Mantém o texto justificado */
+    text-align: center; /* Alinha o texto das respostas no centro */
   }
 }

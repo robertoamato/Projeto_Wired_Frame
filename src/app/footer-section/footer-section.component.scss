@@ -81,7 +81,7 @@
   font-family: 'Poppins', sans-serif; /* Fonte Poppins */
   margin-bottom: 10px; /* Espaçamento inferior */
   text-transform: uppercase; /* Texto em maiúsculas */
-  margin-left: -100px; /* Ajuste de margem para posicionar o texto */
+  margin-left: 30px; /* Ajuste de margem para posicionar o texto */
 }
 
 .footer-column a {
@@ -92,7 +92,7 @@
   font-size: 0.6em; /* Tamanho da fonte dos links */
   font-family: 'Open Sans', sans-serif; /* Fonte Open Sans */
   transition: color 0.3s ease; /* Transição suave para a cor */
-  margin-left: -120px; /* Ajuste de margem para posicionamento */
+  margin-left: 10px; /* Ajuste de margem para posicionamento */
 }
 
 .footer-column a:hover {
@@ -102,17 +102,16 @@
 .footer-column p {
   margin: 0; /* Remove margens padrão */
   max-width: 250px; /* Largura máxima do parágrafo */
-  margin-left: 100px; /* Margem esquerda para ajuste */
-  font-size: 0.9em;
-  text-align: center;
+  font-size: 0.6em;
+  text-align: left;
   
 }
 
 /* Seção de ícones sociais */
 .connect .social-icons {
   display: flex; /* Layout flexível */
-  gap: 20px; /* Espaçamento entre ícones */
-  margin-left: 30px; /* Margem esquerda */
+  gap: 25px; /* Espaçamento entre ícones */
+  margin-left: 80px; /* Margem esquerda */
 }
 
 .social-icons .icon {
@@ -142,13 +141,15 @@
 
 /* Breakpoints para diferentes tamanhos de tela */
 /* Mobile */
+/* Breakpoints para diferentes tamanhos de tela */
+/* Mobile */
 @media (max-width: 480px) {
   /* Seção de contato */
   .contact-section {
-    padding: 40px 20px; /* Reduz o padding para telas menores */
+    padding: 10px 30px; /* Reduz o padding para telas menores */
     text-align: center; /* Centraliza o conteúdo */
+    
   }
-
   /* Banner de informações */
   .info-banner {
     flex-direction: column; /* Alinha o conteúdo verticalmente */
@@ -156,54 +157,143 @@
     margin: 0 auto; /* Remove a margem lateral */
     padding: 20px; /* Padding interno ajustado */
   }
-
   .info-text h2 {
-    font-size: 20px; /* Reduz o tamanho da fonte */
+    font-size: 1.6em; /* Reduz o tamanho da fonte */
     text-align: center; /* Centraliza o texto */
-    margin-bottom: 10px; /* Espaço inferior para separação */
+    margin-bottom: 15px; /* Espaço inferior para separação */
   }
-
   .info-text p {
-    font-size: 16px; /* Ajuste do tamanho da fonte */
+    font-size: 1.2em; /* Ajuste do tamanho da fonte */
     line-height: 1.4; /* Melhor legibilidade */
     margin: 0 0 20px 0; /* Espaço inferior para o botão */
   }
-
   .contact-button {
-    width: 80%; /* Ajuste para ocupar a maior parte da largura */
-    padding: 10px; /* Padding confortável */
-    font-size: 18px; /* Tamanho da fonte adequado */
+    width: 100%; /* Ajuste para ocupar a maior parte da largura */
+    padding: 15px; /* Padding confortável */
+    font-size: 1.3em; /* Tamanho da fonte adequado */
     max-width: 300px; /* Largura máxima do botão */
     margin: 0 auto; /* Centraliza o botão */
   }
-
   /* Conteúdo do rodapé */
   .footer-content {
     flex-direction: column; /* Coloca as colunas em bloco verticalmente */
     align-items: center; /* Centraliza as colunas */
-    padding: 20px; /* Padding ajustado */
+    padding: 30px; /* Padding ajustado */
+    margin-right: -250px;
   }
-
   .footer-column {
     width: 100%; /* Faz cada coluna ocupar 100% da largura */
     margin-bottom: 20px; /* Espaço inferior entre colunas */
     text-align: center; /* Centraliza o texto dentro das colunas */
   }
-
   .footer-column h3 {
-    font-size: 16px; /* Ajuste do tamanho da fonte do título */
+    font-size: 1em; /* Ajuste do tamanho da fonte do título */
     margin-left: 0; /* Remove margens negativas */
   }
-
   .footer-column a {
     font-size: 14px; /* Ajuste do tamanho da fonte dos links */
     margin-left: 0; /* Remove margens negativas */
   }
-
   .footer-column p {
     font-size: 14px; /* Ajuste da fonte */
-    margin-left: 0; /* Remove margens negativas */
+    margin-left: 120px; /* Remove margens negativas */
     text-align: center; /* Centraliza os parágrafos */
+  }
+  /* Ícones sociais */
+  .connect .social-icons {
+    justify-content: center; /* Centraliza os ícones sociais */
+    margin-left: 0; /* Remove margens desnecessárias */
+  }
+  .social-icons .icon {
+    width: 30px; /* Largura dos ícones */
+    height: 30px; /* Altura dos ícones */
+  }
+  .footer-logo {
+    margin-left: -10px; /* Remove margens negativas */
+    
+  }
+}
+
+
+/* Extra small devices */
+/* Small devices (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .contact-section {
+    padding: 60px 20px; /* Padding reduzido para telas menores */
+    text-align: center; /* Centraliza o conteúdo */
+  }
+
+  .info-banner {
+    display: flex; /* Garante o layout flexível */
+    flex-direction: column; /* Alinha o conteúdo verticalmente */
+    align-items: center; /* Centraliza os itens */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .info-text h2 {
+    font-size: 22px; /* Ajusta a fonte para celulares */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 15px; /* Reduz o espaço inferior */
+  }
+
+  .info-text p {
+    font-size: 16px; /* Ajuste do tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+    margin: 0 0 20px 0; /* Espaço inferior para o botão */
+  }
+
+  .contact-button {
+    width: 70%; /* Botão ocupa 70% da largura da tela */
+    margin: 20px auto; /* Centraliza o botão */
+    padding: 12px 0; /* Aumenta o padding */
+    font-size: 16px; /* Tamanho da fonte do botão */
+    text-align: center; /* Centraliza o texto no botão */
+  }
+
+  /* Ajustes para imagem */
+  .image-container {
+    display: flex; /* Garante flexibilidade */
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+  }
+
+  .image-container img {
+    max-width: 100%; /* A imagem ocupa no máximo 100% da largura */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 20px 0; /* Espaçamento para a imagem */
+  }
+
+  /* Conteúdo do rodapé */
+  .footer-content {
+    display: flex;
+    flex-direction: column; /* Coloca as colunas verticalmente */
+    align-items: center; /* Centraliza as colunas */
+    padding: 20px; /* Padding ajustado */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .footer-column {
+    width: 100%; /* Colunas ocupam 100% da largura */
+    margin-bottom: 20px; /* Espaço inferior entre colunas */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .footer-column h3 {
+    font-size: 18px; /* Ajusta o tamanho da fonte do título */
+    margin-left: 0; /* Remove margens negativas */
+    text-align: center; /* Centraliza o título */
+  }
+
+  .footer-column a {
+    font-size: 14px; /* Ajusta o tamanho da fonte dos links */
+    margin-left: 0; /* Remove margens negativas */
+    text-align: center; /* Centraliza os links */
+  }
+
+  .footer-column p {
+    font-size: 14px; /* Ajusta a fonte */
+    margin-left: 0; /* Remove margens negativas */
+    text-align: center; /* Centraliza o parágrafo */
   }
 
   /* Ícones sociais */
@@ -219,42 +309,11 @@
 
   .footer-logo {
     margin-left: 0; /* Remove margens negativas */
+    display: block; /* Garante que o logo seja exibido corretamente */
+    margin: 0 auto; /* Centraliza o logo */
   }
 }
 
-
-/* Extra small devices */
-/* Small devices (481px - 767px) */
-@media (min-width: 481px) and (max-width: 767px) {
-  .contact-section {
-    padding: 60px 20px; /* Padding reduzido para telas menores */
-    text-align: center; /* Centraliza o conteúdo */
-  }
-
-  .info-banner {
-    flex-direction: column; /* Alinha o conteúdo verticalmente */
-    align-items: center; /* Centraliza os itens */
-  }
-
-  .info-text h2 {
-    font-size: 26px; /* Tamanho ajustado da fonte para melhor legibilidade */
-    text-align: center; /* Centraliza o texto */
-    margin-bottom: 20px; /* Espaçamento inferior */
-  }
-
-  .contact-button {
-    width: 70%; /* Botão ocupa 70% da largura da tela */
-    margin: 0 auto; /* Centraliza o botão */
-    padding: 12px 0; /* Aumenta o padding para torná-lo mais confortável */
-    font-size: 16px; /* Tamanho da fonte no botão ajustado */
-  }
-}
-
-.footer-column p {
-  font-size: 16px; /* Ajusta a fonte para uma leitura mais confortável */
-  margin-left: 0; /* Remove margens indesejadas */
-  text-align: center; /* Centraliza os parágrafos */
-}
 
 /* Small tablets (768px - 991px) */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -262,12 +321,10 @@
     padding: 80px 40px; /* Ajuste de padding */
     text-align: center;
   }
-
   .info-text h2 {
     font-size: 28px; /* Tamanho da fonte ajustado para tablets */
     margin-bottom: 25px;
   }
-
   .contact-button {
     width: 60%; /* Botão ocupa 60% da largura */
     margin: 0 auto; /* Centraliza o botão */
@@ -281,11 +338,9 @@
   .contact-section {
     padding: 100px 50px;
   }
-
   .info-text h2 {
     font-size: 30px; /* Fonte ajustada */
   }
-
   .contact-button {
     width: 50%; /* Botão ocupa 50% da largura */
     padding: 16px; /* Padding mais confortável */
@@ -298,11 +353,9 @@
   .contact-section {
     padding: 120px 60px;
   }
-
   .info-text h2 {
     font-size: 32px; /* Fonte maior para desktops */
   }
-
   .contact-button {
     width: 40%; /* Botão ocupa 40% da largura */
     padding: 18px;
@@ -315,15 +368,12 @@
   .contact-section {
     padding: 140px 80px;
   }
-
   .info-text h2 {
     font-size: 36px; /* Fonte maior para telas grandes */
   }
-
   .contact-button {
     width: 400px; /* Largura fixa para o botão */
     padding: 20px;
     font-size: 22px;
   }
 }
-
