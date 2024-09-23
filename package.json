@@ -21,6 +21,8 @@
     "@angular/platform-browser": "^18.2.0",
     "@angular/platform-browser-dynamic": "^18.2.0",
     "@angular/router": "^18.2.0",
+    "@nguniversal/express-engine": "^7.0.1",
+    "ajv": "^8.17.1",
     "projeto-wireframe": "file:",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",

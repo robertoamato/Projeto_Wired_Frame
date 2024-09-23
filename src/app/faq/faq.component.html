@@ -1,12 +1,14 @@
 <div class="faq-container">
   <div class="faq-image">
-    
-    <img src="../../assets/Rectangle 8964.png" alt="FAQ Image">
+    <!-- Imagem com descrição adequada para SEO e acessibilidade -->
+    <img src="../../assets/Rectangle 8964.png" alt="Ilustração sobre perguntas frequentes">
   </div>
   
   <div class="faq-content">
-    <h2>Frequently Asked Questions</h2>
+    <!-- Título otimizado para SEO -->
+    <h2>Perguntas Frequentes sobre Nossas Soluções de Tradução e IA</h2>
     
+    <!-- Otimização para cada item da FAQ -->
     <div *ngFor="let item of faqItems" class="faq-item">
       <div class="faq-question" (click)="toggleFAQ(item)">
         <span>{{ item.question }}</span>
