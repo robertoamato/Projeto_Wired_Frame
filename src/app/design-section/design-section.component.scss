@@ -160,10 +160,21 @@
   .image-container img {
     max-width: 100%; /* A imagem ocupa toda a largura disponível */
   }
+  .text-container p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+  }
+
   /* Ajustes de responsividade para telas pequenas */
 @media (max-width: 480px) {
   .text-container h1 {
     font-size: 1.8em; /* Tamanho reduzido em telas pequenas */
   }
 }
+.text-container p {
+  font-size: 1.1em; /* Fonte menor para melhorar o layout em dispositivos móveis */
+  margin-bottom: 20px; /* Reduzindo a margem inferior */
+  line-height: 1.5; /* Melhor legibilidade em telas menores */
 }
+}
+
