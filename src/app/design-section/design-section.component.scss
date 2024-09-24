@@ -75,12 +75,25 @@
   .text-container h1 {
     font-size: 1.8em;
   }
+
   .text-container p {
     font-size: 1.1em;
     margin-bottom: 20px;
     line-height: 1.5;
   }
+
+  /* Corrigindo padding */
+  .image-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Ajuste este valor conforme o layout desejado */
+    height: auto;
+    
+  }
 }
+
 
 /* Estilo base */
 .text-container h1 {
