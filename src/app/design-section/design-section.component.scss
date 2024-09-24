@@ -80,13 +80,13 @@
 /* Estilo para o título no container de texto */
 .text-container h1 {
   font-family: 'Poppins', sans-serif; /* Usa a fonte Poppins */
-  font-size: 2.7em; /* Tamanho grande para o título */
+  font-size: 2.2em; /* Tamanho grande para o título */
   font-weight: 600; /* Peso de fonte negrito */
   color: #000; /* Cor preta para o texto */
   margin-bottom: 20px; /* Espaçamento abaixo do título */
   line-height: 1.2; /* Altura da linha ajustada para melhor legibilidade */
   text-align: center; /* Alinha o título à esquerda */
-  word-wrap: break-word; /* Quebra palavras longas em várias linhas se necessário */
+  
 }
 
 /* Estilo para o parágrafo no container de texto */
@@ -160,4 +160,10 @@
   .image-container img {
     max-width: 100%; /* A imagem ocupa toda a largura disponível */
   }
+  /* Ajustes de responsividade para telas pequenas */
+@media (max-width: 480px) {
+  .text-container h1 {
+    font-size: 1.8em; /* Tamanho reduzido em telas pequenas */
+  }
+}
 }
